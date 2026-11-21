@@ -49,3 +49,4 @@ Allow: /
 Sitemap: https://padelgree.com/sitemap.xml
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /knowledge/
