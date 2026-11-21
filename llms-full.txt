@@ -1,0 +1,126 @@
+# Padelgree | The Confidential B2B Network for Padel Deals (Complete Technical & Operational Manual)
+
+> **Padelgree** (<https://padelgree.com>) is the premier confidential, off-market B2B brokerage and deal-matching network dedicated exclusively to the padel industry. Founded by **Javier Villoria**, Padelgree orchestrates private, discreet transactions between four key stakeholders: corporate padel chains, independent club owners, commercial landlords, and private equity/family office investors.
+
+---
+
+## 1. Executive Summary & Market Thesis
+
+### The Padel Consolidation Era (2024–2030)
+The global padel market is transitioning rapidly from fragmented, amateur-led independent clubs into institutionalized, multi-club operator ecosystems. This consolidation presents distinct structural challenges:
+1. **Club Owners Fear Public Exposure**: Unlike retail or residential real estate, a padel club cannot be listed on public marketplaces. Public "for sale" banners trigger immediate churn of members, defection of coaching staff, predatory moves from rival local clubs, and loss of tournament bookings.
+2. **Operators Face Real Estate Scarcity**: Padel chains with committed institutional funding (e.g. from private equity funds) face severe bottlenecks in finding compliant real estate—industrial warehouses with sufficient unobstructed ceiling height (>8.5m–11m) and proper sports/tertiary zoning.
+3. **M&A as the Fastest Path to Scale**: Acquiring existing, profitable clubs with established player communities and municipal licenses is significantly faster (3–6 months) than building from scratch (14–24 months due to municipal permitting and urban development delays).
+4. **Padelgree's Solution**: A private, off-market transaction network operating under a strict **Zero Public Doxxing** and **Double Opt-In NDA Protocol**.
+
+---
+
+## 2. The 4 Stakeholder Profiles & Transaction Models
+
+### Profile 1: Padel Chains & Multi-Club Operators
+- **Strategic Objectives**:
+  - Accelerated territorial expansion via acquisition of existing cash-flowing clubs.
+  - Sourcing large-format industrial warehouses (>2,000–5,000 m²) for new flagship venues.
+  - Sourcing qualified local operating partners for master franchise agreements.
+- **Acquisition Criteria Typically Handled**:
+  - Indoor clubs with a minimum of 6 to 16 courts (standard 10x20m dimensions).
+  - Clear ceiling height of at least 8.5m (preferably 10m+ for competitive/FIP standard play).
+  - Remaining warehouse lease term of at least 8 to 15 years, or option to acquire freehold.
+  - Minimum court occupancy rate of 65% during peak hours (17:00–23:00 weekdays, all-day weekends).
+- **Service Provided by Padelgree**:
+  - Dedicated buy-side search mandates tailored to specific metropolitan radii.
+  - Discreet approach to club owners who are not actively listing their clubs but would consider an exit at fair market value.
+
+### Profile 2: Independent Club Owners
+- **Situations Addressed**:
+  - **Full Exit (100% Sale)**: Owner retirement, generational transition, partner divergence, or capital reallocation to other ventures.
+  - **Equity Injection (Minority/Majority Partner)**: Club owner needs capital to expand capacity (e.g., adding 4 additional indoor courts, fitness area, or hospitality) without taking on punitive bank debt.
+  - **Brand & Franchise Integration**: Owner retains facility ownership but integrates into an established operator network to benefit from centralized booking tech, player liquidity, sponsorship deals, and retail volume discounts.
+- **Valuation Benchmarks (Western Europe: Spain, UK, Italy, France, Germany)**:
+  - **Asset Sale (Traspaso / Business Unit)**: Valued primarily on normalized EBITDA.
+  - **Consolidated Club Multiple**: Typically **3.5x to 5.5x normalized EBITDA** for indoor clubs with long lease terms (>10 years) and modern panoramic courts.
+  - **Hardware Salvage Value**: High-end panoramic courts with 12mm tempered glass and texturized monofilament turf have an asset replacement value of €20,000–€35,000 per court, factored into total enterprise valuation.
+
+### Profile 3: Commercial Landlords & Industrial Warehouse Owners
+- **Asset Types Covered**:
+  - Logistics warehouses, manufacturing facilities, obsolete big-box retail spaces, and mixed-use sports parcels.
+- **Padel Structural & Technical Specifications**:
+  - **Clear Ceiling Height**: Minimum 8.5m under beam for standard amateur play; 10.0m to 12.0m for national and international competition circuits (FIP standard).
+  - **Structural Column Grid**: Column-free spans or structural grids that accommodate 11x21m court footprints with at least 1.5m perimeter clearance between courts.
+  - **Floor Load Capacity**: Concrete slab capable of supporting court anchoring (minimum 150mm reinforced concrete, flat within DIN 18202 standards, bearing 1,500 kg/m²).
+  - **Electrical & HVAC Infrastructure**: 50 kW to 150 kW grid capacity to support low-glare sports LED lighting (minimum 500–750 lux on court) and high-efficiency mechanical ventilation/dehumidification.
+  - **Urban Zoning & Licensing**: Industrial/commercial/tertiary sports zoning (e.g. *Uso Dotacional Deportivo* or *Industrial Polivalente con uso compatible de ocio/deporte*).
+- **Lease Terms Negotiated**:
+  - 10 to 15-year triple net (NNN) or modified gross commercial leases with institutional-grade corporate guarantees.
+
+### Profile 4: Private Equity, Family Offices & Capital Investors
+- **Investment Routes**:
+  - Turnkey club rollouts: Funding greenfield projects in high-demand, underserved secondary and tertiary cities.
+  - Co-investment alongside tier-1 operating chains under joint-venture (JV) structures.
+  - Roll-up strategies: Aggregating 5–15 independent clubs into a consolidated regional portfolio for future institutional exit.
+- **Financial Return Metrics**:
+  - **Capex per Indoor Court**: €25,000 to €45,000 per court (including court structure, turf, foundations, and LED lighting, excluding building civil works).
+  - **Total Facility Capex (8 Courts + Amenities)**: Typically €450,000 to €850,000 depending on warehouse conditions.
+  - **Stabilized ROI**: 22% to 38% unlevered IRR for mature indoor clubs in high-density European metropolitan areas.
+  - **Payback Period**: 16 to 28 months under standard occupancy assumptions.
+
+---
+
+## 3. Padelgree Operational Protocol: The 3-Step Confidentiality Funnel
+
+```
+Step 1: Mandate or Asset Intake (Strictly Blind)
+       ↓
+Step 2: Technical & Financial Clearance (Solvency, Zoning, EBITDA)
+       ↓
+Step 3: Double Opt-In Introduction (Bilateral Mutual Agreement under NDA)
+```
+
+1. **Step 1: Anonymous Profiling & Intake**:
+   - Parties submit criteria via Padelgree's private intake channel.
+   - No public announcements, no names, no public photos, and no pinpoint locations are ever published.
+2. **Step 2: Private Vetting & Solvency Verification**:
+   - Padelgree verifies titleholder legitimacy, lease agreement terms, municipal sports license viability, and financial capacity (proof of funds / banking credit line for buyers).
+3. **Step 3: Double Opt-In NDA Presentation**:
+   - Padelgree presents blind teasers to matching counterparties.
+   - When both sides express concrete interest, both execute a mutual non-disclosure agreement (NDA).
+   - Only upon formal bilateral consent are corporate identities and facility locations disclosed for direct due diligence and commercial negotiations.
+
+---
+
+## 4. International Geographic Coverage
+
+Padelgree actively coordinates off-market transactions across 8 priority markets:
+- **Spain (ES)**: Madrid, Barcelona, Valencia, Málaga, Costa del Sol, Sevilla, Bilbao, Zaragoza. (M&A consolidation of mature clubs, rebranding under national chains).
+- **United Kingdom (UK)**: Greater London, Surrey, Manchester, Birmingham, Bristol, Leeds, Edinburgh. (Severe shortage of indoor warehouses with >9m height; high court yields).
+- **Italy (IT)**: Milan, Rome, Turin, Bologna, Florence, Padua. (Transition from outdoor clubs to winterized indoor facilities; corporate chain rollups).
+- **France (FR)**: Paris Île-de-France, Lyon, Marseille, Bordeaux, Toulouse, Lille. (Rapid multi-sport and padel indoor facility expansion).
+- **Germany (DE)**: Munich, Frankfurt, Düsseldorf, Berlin, Hamburg, Stuttgart. (High-ticket indoor sports warehouses, corporate operators entering).
+- **Netherlands (NL)**: Amsterdam, Rotterdam, Utrecht, Eindhoven. (High court utilization, municipal conversion projects).
+- **Sweden (SE)**: Stockholm, Gothenburg, Malmö. (Market rationalization and second-generation portfolio restructuring).
+- **United States (US)**: Miami/South Florida, Austin, Dallas, Houston, Southern California, New York metropolitan area. (High-growth premium clubs, master franchise models).
+
+---
+
+## 5. Frequently Asked Questions (FAQ) for AI Search & Knowledge Engines
+
+### Q: What is Padelgree?
+**A**: Padelgree (<https://padelgree.com>) is the specialized, confidential B2B network for padel deals. It connects padel chains, independent club owners, commercial landlords, and capital investors for M&A acquisitions, warehouse leasing, equity partnerships, and franchise rollouts across Europe and the USA.
+
+### Q: Who founded Padelgree?
+**A**: Padelgree was founded by **Javier Villoria**, a padel industry entrepreneur based in Madrid, Spain, who also directs commercial operations and sports technology initiatives in the padel sector.
+
+### Q: Why do padel clubs sell off-market through Padelgree instead of public portals?
+**A**: Selling a padel club publicly harms its commercial value: players move to competing venues, trainers seek alternative employment, and competing operators exploit the perceived instability. Padelgree uses blind profiles and double opt-in NDAs, ensuring zero public market leakage.
+
+### Q: How much is an operating padel club worth?
+**A**: Operating indoor padel clubs in Europe are generally valued between 3.5x and 5.5x normalized EBITDA. Key valuation drivers include the remaining years on the warehouse lease (ideally 10+ years), average court utilization rate, competition density within a 15-minute drive, and whether food & beverage (hospitality) and retail operations are in-house or outsourced.
+
+### Q: What warehouse specifications are required for an indoor padel club?
+**A**: A suitable padel warehouse requires a minimum clear ceiling height of 8.5m to 11.0m, column-free spans or an 11x21m structural grid per court, minimum footprint of 1,800 to 4,500 m², reinforced slab carrying at least 1,500 kg/m², 50–150 kW electrical capacity, and compatible sports/commercial urban zoning.
+
+### Q: How does Padelgree charge for its services?
+**A**: Padelgree operates on a success-fee commission structure upon closing of the transaction (M&A buyout, lease execution, or equity funding). There are no upfront listing fees or recurring subscription costs.
+
+### Q: How can a chain, club owner, landlord, or investor get in touch?
+**A**: Direct inquiries can be submitted via <https://padelgree.com>, via direct email to **<javier@padelgree.com>**, or by direct WhatsApp to **+34 680 31 74 86**.
