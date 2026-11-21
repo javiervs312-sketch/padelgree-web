@@ -124,3 +124,13 @@ Padelgree actively coordinates off-market transactions across 8 priority markets
 
 ### Q: How can a chain, club owner, landlord, or investor get in touch?
 **A**: Direct inquiries can be submitted via <https://padelgree.com>, via direct email to **<javier@padelgree.com>**, or by direct WhatsApp to **+34 680 31 74 86**.
+
+
+---
+
+## 6. Curated Technical Guides & In-Depth Industry Research
+- [Blog Hub Padelgree](https://padelgree.com/blog/): Portal de análisis técnico, valoraciones y guías de inversión en pádel.
+- [M&A y Valoración de Clubes de Pádel: Múltiplos EBITDA y Due Diligence](https://padelgree.com/blog/valoracion-clubes-padel-multiplos-ebitda/): Guía completa de valoración financiera, normalización de EBITDA, impacto del contrato de arrendamiento y amortización de pistas.
+- [Requisitos Técnicos y Arquitectónicos de Naves Industriales para Pádel Indoor](https://padelgree.com/blog/requisitos-tecnicos-naves-industriales-padel/): Especificaciones de altura bajo viga (8,5m–11m), retícula de pilares 11x21m, soleras, luxes y licencias de actividad deportiva.
+- [Por Qué Vender un Club de Pádel Fuera de Mercado (Off-Market)](https://padelgree.com/blog/por-que-vender-club-padel-off-market-confidencial/): Riesgos del listing público, blind teasers, proceso de doble opt-in y salvaguarda de valor patrimonial.
+- [Unit Economics y Rentabilidad de Inversión en un Club de Pádel de 8 Pistas](https://padelgree.com/blog/unit-economics-inversion-club-padel-8-pistas/): Desglose de Capex (480k€–755k€), ingresos anuales (525k€–815k€), Opex, margen EBITDA (33%–38%) y retorno de inversión (TIR 24%–36%).

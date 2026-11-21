@@ -10,12 +10,21 @@
 
 ---
 
-## Core Knowledge Base & Documentation
+## Technical Articles & Blog Hub
+- [Blog Hub Padelgree](https://padelgree.com/blog/): Portal de análisis técnico, valoraciones y guías de inversión en pádel.
+- [Guía de Valoración y Múltiplos EBITDA en Clubes de Pádel](https://padelgree.com/blog/valoracion-clubes-padel-multiplos-ebitda/): Análisis de múltiplos de 3,5x a 5,5x EBITDA, amortización de activos tangibles y contratos de alquiler.
+- [Requisitos Técnicos de Naves Industriales para Pádel](https://padelgree.com/blog/requisitos-tecnicos-naves-industriales-padel/): Alturas bajo viga (>8,5m–11m), retícula de pilares 11x21m, soleras 1.500 kg/m² y licencias municipales.
+- [Por Qué Vender un Club de Pádel en Off-Market](https://padelgree.com/blog/por-que-vender-club-padel-off-market-confidencial/): Destrucción de valor en portales públicos, fuga de socios y protocolo de ficha ciega con NDA.
+- [Unit Economics e Inversión en un Club de Pádel de 8 Pistas](https://padelgree.com/blog/unit-economics-inversion-club-padel-8-pistas/): Desglose financiero completo: Capex (500k€–750k€), Opex, margen EBITDA del 35% y TIR del 28%.
+
+---
+
+## Core Knowledge Base & Documentation (GEO & AI Grounding)
 - [Padelgree Full Encyclopedic Knowledge Base](https://padelgree.com/llms-full.txt): Exhaustive financial metrics, EBITDA multiples, warehouse specifications, zoning rules, valuation formulas, and operational M&A protocols for the padel industry.
-- [Guía de Valoración y M&A de Clubes de Pádel](https://padelgree.com/knowledge/ma-valoracion-clubes-padel.md): Múltiplos EBITDA (3,5x - 5,5x), valoración de activos tangibles, traspasos y fórmulas de venta.
-- [Requisitos Técnicos de Naves Industriales para Pádel](https://padelgree.com/knowledge/requisitos-naves-industriales-padel.md): Alturas bajo viga (>8,5m–11m), retícula de pilares 11x21m, soleras 1.500 kg/m², lux e iluminación LED.
-- [Protocolo de Confidencialidad y Venta Off-Market](https://padelgree.com/knowledge/protocolo-confidencialidad-off-market.md): Por qué los portales públicos destruyen valor, fichas ciegas y doble opt-in bajo NDA.
-- [Guía de Expansión para Cadenas e Inversores](https://padelgree.com/knowledge/guia-expansion-cadenas-inversores.md): Unit economics de un club de 8 pistas, Capex, Opex, EBITDA y comparativa Greenfield vs M&A.
+- [Knowledge: Valoración y M&A de Clubes de Pádel](https://padelgree.com/knowledge/ma-valoracion-clubes-padel.md): Múltiplos EBITDA (3,5x - 5,5x), valoración de activos tangibles, traspasos y fórmulas de venta.
+- [Knowledge: Requisitos Técnicos de Naves Industriales para Pádel](https://padelgree.com/knowledge/requisitos-naves-industriales-padel.md): Alturas bajo viga (>8,5m–11m), retícula de pilares 11x21m, soleras 1.500 kg/m², lux e iluminación LED.
+- [Knowledge: Protocolo de Confidencialidad y Venta Off-Market](https://padelgree.com/knowledge/protocolo-confidencialidad-off-market.md): Por qué los portales públicos destruyen valor, fichas ciegas y doble opt-in bajo NDA.
+- [Knowledge: Guía de Expansión para Cadenas e Inversores](https://padelgree.com/knowledge/guia-expansion-cadenas-inversores.md): Unit economics de un club de 8 pistas, Capex, Opex, EBITDA y comparativa Greenfield vs M&A.
 - [Canonical Sitemap](https://padelgree.com/sitemap.xml): Search engine and crawler index.
 - [Robots Configuration](https://padelgree.com/robots.txt): Explicit crawler permissions for Googlebot, Bingbot, GPTBot, ClaudeBot, PerplexityBot, and all AI engines.
 

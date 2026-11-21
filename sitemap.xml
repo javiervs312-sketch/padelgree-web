@@ -11,6 +11,46 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://padelgree.com/"/>
   </url>
   <url>
+    <loc>https://padelgree.com/blog/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://padelgree.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://padelgree.com/blog/"/>
+  </url>
+  <url>
+    <loc>https://padelgree.com/blog/valoracion-clubes-padel-multiplos-ebitda/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://padelgree.com/blog/valoracion-clubes-padel-multiplos-ebitda/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://padelgree.com/blog/valoracion-clubes-padel-multiplos-ebitda/"/>
+  </url>
+  <url>
+    <loc>https://padelgree.com/blog/requisitos-tecnicos-naves-industriales-padel/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://padelgree.com/blog/requisitos-tecnicos-naves-industriales-padel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://padelgree.com/blog/requisitos-tecnicos-naves-industriales-padel/"/>
+  </url>
+  <url>
+    <loc>https://padelgree.com/blog/por-que-vender-club-padel-off-market-confidencial/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://padelgree.com/blog/por-que-vender-club-padel-off-market-confidencial/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://padelgree.com/blog/por-que-vender-club-padel-off-market-confidencial/"/>
+  </url>
+  <url>
+    <loc>https://padelgree.com/blog/unit-economics-inversion-club-padel-8-pistas/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://padelgree.com/blog/unit-economics-inversion-club-padel-8-pistas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://padelgree.com/blog/unit-economics-inversion-club-padel-8-pistas/"/>
+  </url>
+  <url>
     <loc>https://padelgree.com/llms.txt</loc>
     <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>

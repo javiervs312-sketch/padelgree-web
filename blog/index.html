@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Blog de Operaciones, M&A y Expansión de Pádel | Padelgree</title>
+  <meta name="description" content="Artículos técnicos, múltiplos de valoración EBITDA, requisitos arquitectónicos de naves y protocolos de venta confidencial en el sector del pádel por Javier Villoria.">
+  <meta name="author" content="Javier Villoria">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <!-- Favicon Vectorial -->
+  <link rel="icon" type="image/svg+xml" href="https://padelgree.com/favicon.svg">
+  <link rel="apple-touch-icon" href="https://padelgree.com/favicon.svg">
+
+  <!-- Canónica y Multilingüe Hreflang -->
+  <link rel="canonical" href="https://padelgree.com/blog/">
+  <link rel="alternate" hreflang="es" href="https://padelgree.com/blog/">
+  <link rel="alternate" hreflang="x-default" href="https://padelgree.com/blog/">
+
+  <!-- AI Discovery & GEO -->
+  <link rel="alternate" type="text/markdown" href="https://padelgree.com/llms.txt" title="LLMs.txt">
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="Padelgree">
+  <meta property="og:url" content="https://padelgree.com/blog/">
+  <meta property="og:title" content="Blog de Operaciones, M&A y Expansión de Pádel | Padelgree">
+  <meta property="og:description" content="Análisis técnicos de valoración, requisitos de naves y operaciones confidenciales de pádel por Javier Villoria.">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Blog de Operaciones, M&A y Expansión de Pádel | Padelgree">
+  <meta name="twitter:description" content="Análisis técnicos de valoración, requisitos de naves y operaciones confidenciales de pádel.">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Blog",
+        "@id": "https://padelgree.com/blog/#blog",
+        "name": "Blog de Operaciones y M&A de Pádel · Padelgree",
+        "description": "Publicación especializada en economía del pádel, valoración de clubes, requisitos de naves industriales y operaciones corporativas.",
+        "url": "https://padelgree.com/blog/",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Padelgree",
+          "url": "https://padelgree.com"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://padelgree.com/blog/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://padelgree.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://padelgree.com/blog/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts: Outfit (Titulares) + Plus Jakarta Sans (Lectura) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+</head>
+
+<body class="bg-white text-slate-900 font-sans font-medium antialiased selection:bg-slate-900 selection:text-white min-h-screen flex flex-col justify-between">
+
+  <!-- HEADER FIJO COMPACTO -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
+      
+      <!-- LOGO -->
+      <a href="/" class="flex items-center">
+        <span class="font-heading font-black text-xl sm:text-2xl tracking-wider text-slate-950">PADELGREE</span>
+      </a>
+
+      <!-- DERECHA: ENLACE HOME + CONTACTO -->
+      <div class="flex items-center gap-3 sm:gap-4">
+        <a href="/" class="text-xs font-bold text-slate-600 hover:text-slate-950 transition">
+          ← Volver a Padelgree
+        </a>
+        <a href="https://wa.me/34680317486" target="_blank" rel="noopener" class="px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-slate-950 hover:bg-slate-800 text-white font-heading font-bold text-xs uppercase tracking-wider transition cursor-pointer">
+          Contactar
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- COMPENSADOR DE SCROLL -->
+  <div class="h-14 sm:h-16 w-full" aria-hidden="true"></div>
+
+  <!-- CONTENIDO DEL BLOG -->
+  <main class="w-full max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-14 flex-1">
+    
+    <!-- MIGA DE PAN -->
+    <nav class="flex items-center gap-2 text-xs text-slate-400 mb-6 font-mono">
+      <a href="/" class="hover:text-slate-950 transition">Inicio</a>
+      <span>/</span>
+      <span class="text-slate-900 font-bold">Blog & Análisis</span>
+    </nav>
+
+    <!-- CABECERA DE SECCIÓN -->
+    <div class="max-w-3xl mb-12">
+      <span class="text-xs font-mono font-bold tracking-widest text-slate-400 uppercase block mb-2">
+        Inteligencia de Mercado & M&A
+      </span>
+      <h1 class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-slate-950 tracking-tight leading-tight mb-4">
+        Economía del Pádel, Valoración y Operaciones Off-Market
+      </h1>
+      <p class="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
+        Artículos técnicos con datos reales de transacciones, métricas de valoración EBITDA, requisitos arquitectónicos para naves y protocolos de confidencialidad por Javier Villoria.
+      </p>
+    </div>
+
+    <!-- LISTADO DE ARTÍCULOS EN GRID DE 2x2 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+      
+      <!-- ARTÍCULO 1: VALORACIÓN Y MÚLTIPLOS EBITDA -->
+      <a href="/blog/valoracion-clubes-padel-multiplos-ebitda/" class="group block bg-white border border-slate-300 hover:border-slate-950 rounded-2xl p-6 sm:p-7 transition-all duration-200 hover:shadow-xl hover:-translate-y-0.5 flex flex-col justify-between cursor-pointer">
+        <div>
+          <div class="flex items-center justify-between text-xs text-slate-400 font-mono mb-3">
+            <span class="font-bold text-slate-900 uppercase">M&A y Finanzas</span>
+            <span>Lectura: 6 min</span>
+          </div>
+          <h2 class="font-heading font-black text-xl sm:text-2xl text-slate-950 group-hover:text-black leading-snug mb-3">
+            M&A y Valoración de Clubes de Pádel: Múltiplos EBITDA y Factores Críticos
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal mb-6">
+            Análisis de los múltiplos de mercado (3,5x a 5,5x EBITDA), valor de reposición de pistas panorámicas y cómo influye el contrato de alquiler de la nave en el precio de venta.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-heading font-bold text-slate-950 group-hover:underline">
+          <span>Leer artículo técnico</span>
+          <span class="w-7 h-7 rounded-full bg-slate-950 text-white flex items-center justify-center group-hover:scale-105 transition">
+            →
+          </span>
+        </div>
+      </a>
+
+      <!-- ARTÍCULO 2: REQUISITOS DE NAVES INDUSTRIALES -->
+      <a href="/blog/requisitos-tecnicos-naves-industriales-padel/" class="group block bg-white border border-slate-300 hover:border-slate-950 rounded-2xl p-6 sm:p-7 transition-all duration-200 hover:shadow-xl hover:-translate-y-0.5 flex flex-col justify-between cursor-pointer">
+        <div>
+          <div class="flex items-center justify-between text-xs text-slate-400 font-mono mb-3">
+            <span class="font-bold text-slate-900 uppercase">Inmuebles y Real Estate</span>
+            <span>Lectura: 7 min</span>
+          </div>
+          <h2 class="font-heading font-black text-xl sm:text-2xl text-slate-950 group-hover:text-black leading-snug mb-3">
+            Requisitos Técnicos de Naves Industriales para Pádel Indoor
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal mb-6">
+            Estándares de altura bajo viga (8,5m a 11m), retícula de pilares 11x21m, soleras de hormigón para 1.500 kg/m², iluminación deportiva LED y licencias de uso deportivo.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-heading font-bold text-slate-950 group-hover:underline">
+          <span>Leer artículo técnico</span>
+          <span class="w-7 h-7 rounded-full bg-slate-950 text-white flex items-center justify-center group-hover:scale-105 transition">
+            →
+          </span>
+        </div>
+      </a>
+
+      <!-- ARTÍCULO 3: CONFIDENCIALIDAD Y VENTA OFF-MARKET -->
+      <a href="/blog/por-que-vender-club-padel-off-market-confidencial/" class="group block bg-white border border-slate-300 hover:border-slate-950 rounded-2xl p-6 sm:p-7 transition-all duration-200 hover:shadow-xl hover:-translate-y-0.5 flex flex-col justify-between cursor-pointer">
+        <div>
+          <div class="flex items-center justify-between text-xs text-slate-400 font-mono mb-3">
+            <span class="font-bold text-slate-900 uppercase">Estrategia Off-Market</span>
+            <span>Lectura: 5 min</span>
+          </div>
+          <h2 class="font-heading font-black text-xl sm:text-2xl text-slate-950 group-hover:text-black leading-snug mb-3">
+            Por Qué la Venta de un Club de Pádel Debe Ser 100% Off-Market
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal mb-6">
+            Cómo los anuncios públicos en portales destruyen el valor de un club provocando fuga de clientes y ofertas a la baja. El protocolo de ficha ciega y doble opt-in.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-heading font-bold text-slate-950 group-hover:underline">
+          <span>Leer artículo técnico</span>
+          <span class="w-7 h-7 rounded-full bg-slate-950 text-white flex items-center justify-center group-hover:scale-105 transition">
+            →
+          </span>
+        </div>
+      </a>
+
+      <!-- ARTÍCULO 4: UNIT ECONOMICS 8 PISTAS -->
+      <a href="/blog/unit-economics-inversion-club-padel-8-pistas/" class="group block bg-white border border-slate-300 hover:border-slate-950 rounded-2xl p-6 sm:p-7 transition-all duration-200 hover:shadow-xl hover:-translate-y-0.5 flex flex-col justify-between cursor-pointer">
+        <div>
+          <div class="flex items-center justify-between text-xs text-slate-400 font-mono mb-3">
+            <span class="font-bold text-slate-900 uppercase">Inversión y Capex</span>
+            <span>Lectura: 8 min</span>
+          </div>
+          <h2 class="font-heading font-black text-xl sm:text-2xl text-slate-950 group-hover:text-black leading-snug mb-3">
+            Unit Economics y Rentabilidad de un Club de Pádel Indoor de 8 Pistas
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal mb-6">
+            Modelo financiero detallado: Capex inicial (490k€ a 765k€), facturación anual estimada, estructura de Opex, margen EBITDA del 32%-38% y TIR proyectada.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-heading font-bold text-slate-950 group-hover:underline">
+          <span>Leer artículo técnico</span>
+          <span class="w-7 h-7 rounded-full bg-slate-950 text-white flex items-center justify-center group-hover:scale-105 transition">
+            →
+          </span>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- BANNER DE ASESORÍA PERSONAL CON JAVIER -->
+    <div class="mt-14 bg-slate-50 border border-slate-200 rounded-2xl p-8 sm:p-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+      <div class="max-w-xl">
+        <h3 class="font-heading font-black text-xl sm:text-2xl text-slate-950 mb-2">
+          ¿Tienes una consulta específica o una operación en marcha?
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+          Tanto si diriges una cadena en expansión como si eres dueño de un club o dispones de una nave, analizamos tu caso en privado y bajo estricto acuerdo de confidencialidad.
+        </p>
+      </div>
+      <div class="shrink-0 flex flex-col sm:flex-row gap-3">
+        <a href="https://wa.me/34680317486" target="_blank" rel="noopener" class="px-5 py-3 rounded-full bg-slate-950 hover:bg-slate-800 text-white font-heading font-bold text-xs uppercase tracking-wider text-center transition">
+          WhatsApp (+34 680 31 74 86)
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full border-t border-slate-200 bg-white py-8 mt-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <div class="flex items-center gap-2">
+        <span class="font-heading font-black text-slate-950 text-sm">PADELGREE</span>
+        <span>·</span>
+        <span>The Confidential B2B Network for Padel Deals</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="/" class="hover:text-slate-950 font-bold transition">Inicio</a>
+        <a href="https://wa.me/34680317486" target="_blank" rel="noopener" class="hover:text-slate-950 font-bold transition">WhatsApp</a>
+        <a href="mailto:javier@padelgree.com" class="hover:text-slate-950 font-bold transition">javier@padelgree.com</a>
+        <a href="https://padelgree.com/llms.txt" class="hover:text-slate-950 font-mono font-bold transition">llms.txt</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

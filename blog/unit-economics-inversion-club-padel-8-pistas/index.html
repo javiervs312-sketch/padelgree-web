@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Unit Economics y Rentabilidad de un Club de Pádel de 8 Pistas | Padelgree</title>
+  <meta name="description" content="Estudio financiero detallado para inversores y operadores: desglose de Capex inicial (490k€ a 765k€), facturación anual, Opex, margen EBITDA del 35% y TIR proyectada.">
+  <meta name="author" content="Javier Villoria">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <!-- Favicon Vectorial -->
+  <link rel="icon" type="image/svg+xml" href="https://padelgree.com/favicon.svg">
+  <link rel="apple-touch-icon" href="https://padelgree.com/favicon.svg">
+
+  <!-- Canónica y Multilingüe Hreflang -->
+  <link rel="canonical" href="https://padelgree.com/blog/unit-economics-inversion-club-padel-8-pistas/">
+  <link rel="alternate" hreflang="es" href="https://padelgree.com/blog/unit-economics-inversion-club-padel-8-pistas/">
+  <link rel="alternate" hreflang="x-default" href="https://padelgree.com/blog/unit-economics-inversion-club-padel-8-pistas/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="Padelgree">
+  <meta property="og:url" content="https://padelgree.com/blog/unit-economics-inversion-club-padel-8-pistas/">
+  <meta property="og:title" content="Unit Economics y Rentabilidad de un Club de Pádel de 8 Pistas | Padelgree">
+  <meta property="og:description" content="Modelo financiero y análisis de rentabilidad para inversores en clubes de pádel cubiertos de 8 pistas por Javier Villoria.">
+
+  <!-- Schema.org BlogPosting -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://padelgree.com/blog/unit-economics-inversion-club-padel-8-pistas/"
+    },
+    "headline": "Unit Economics y Rentabilidad de un Club de Pádel Indoor de 8 Pistas",
+    "description": "Estudio financiero sobre inversión, facturación, costes y TIR en centros de pádel cubiertos por Javier Villoria.",
+    "author": {
+      "@type": "Person",
+      "name": "Javier Villoria",
+      "jobTitle": "Fundador de Padelgree",
+      "url": "https://www.linkedin.com/in/javier-villoria-soleto-606737298/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Padelgree",
+      "url": "https://padelgree.com"
+    },
+    "datePublished": "2026-11-22",
+    "dateModified": "2026-11-22"
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white text-slate-900 font-sans font-medium antialiased selection:bg-slate-900 selection:text-white min-h-screen flex flex-col justify-between">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center">
+        <span class="font-heading font-black text-xl sm:text-2xl tracking-wider text-slate-950">PADELGREE</span>
+      </a>
+      <div class="flex items-center gap-3">
+        <a href="/blog/" class="text-xs font-bold text-slate-600 hover:text-slate-950 transition">← Ver todos los artículos</a>
+        <a href="https://wa.me/34680317486" target="_blank" rel="noopener" class="px-3.5 py-1.5 rounded-full bg-slate-950 text-white font-heading font-bold text-xs uppercase tracking-wider transition">Contactar</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="h-14 sm:h-16 w-full" aria-hidden="true"></div>
+
+  <!-- ARTÍCULO -->
+  <article class="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-14 flex-1">
+    
+    <!-- MIGA DE PAN -->
+    <nav class="flex items-center gap-2 text-xs text-slate-400 mb-6 font-mono">
+      <a href="/" class="hover:text-slate-950 transition">Inicio</a>
+      <span>/</span>
+      <a href="/blog/" class="hover:text-slate-950 transition">Blog</a>
+      <span>/</span>
+      <span class="text-slate-900 font-bold truncate">Unit Economics</span>
+    </nav>
+
+    <!-- METADATOS Y TÍTULO -->
+    <div class="mb-8">
+      <div class="flex items-center gap-3 text-xs text-slate-400 font-mono mb-3">
+        <span class="font-bold text-slate-900 uppercase">Inversión & Negocio</span>
+        <span>·</span>
+        <span>Por Javier Villoria</span>
+        <span>·</span>
+        <span>22 nov 2026</span>
+      </div>
+      <h1 class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-slate-950 tracking-tight leading-tight mb-4">
+        Unit Economics y Rentabilidad de un Club de Pádel Indoor de 8 Pistas
+      </h1>
+      <p class="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
+        El formato de 8 pistas cubiertas se ha consolidado como el estándar óptimo de rentabilidad para inversores privados y family offices. Desglosamos el Capex real, ingresos por línea de negocio, estructura de costes y retorno de la inversión.
+      </p>
+    </div>
+
+    <!-- CUERPO EDITORIAL -->
+    <div class="prose prose-slate max-w-none text-slate-800 text-sm sm:text-base leading-relaxed space-y-6">
+      
+      <h2 class="font-heading font-black text-xl sm:text-2xl text-slate-950 mt-10 mb-3">
+        1. Inversión Inicial Requerida (Capex Total)
+      </h2>
+      <p>
+        Para un centro de pádel de 8 pistas en una nave industrial de aproximadamente <strong>2.800 a 3.200 m²</strong> en régimen de alquiler, la inversión en obra civil y equipamiento se distribuye en las siguientes partidas clave:
+      </p>
+
+      <!-- TABLA DE CAPEX -->
+      <div class="overflow-x-auto my-6 border border-slate-200 rounded-xl">
+        <table class="w-full text-xs text-left">
+          <thead class="bg-slate-50 border-b border-slate-200 text-slate-950 font-heading font-bold">
+            <tr>
+              <th class="p-3.5">Concepto de Inversión</th>
+              <th class="p-3.5">Rango Presupuestario</th>
+              <th class="p-3.5">% del Total</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr>
+              <td class="p-3.5 font-bold text-slate-950">8 Pistas Panorámicas (Estructura, vidrio 12mm, LED)</td>
+              <td class="p-3.5 font-mono font-bold text-slate-900">190.000 € – 240.000 €</td>
+              <td class="p-3.5 text-slate-600">~35%</td>
+            </tr>
+            <tr>
+              <td class="p-3.5 font-bold text-slate-950">Adecuación Civil (Solera hormigón pulido, vestuarios)</td>
+              <td class="p-3.5 font-mono font-bold text-slate-900">170.000 € – 280.000 €</td>
+              <td class="p-3.5 text-slate-600">~36%</td>
+            </tr>
+            <tr>
+              <td class="p-3.5 font-bold text-slate-950">Climatización / Deshumidificación (Aerotermia)</td>
+              <td class="p-3.5 font-mono font-bold text-slate-900">50.000 € – 110.000 €</td>
+              <td class="p-3.5 text-slate-600">~13%</td>
+            </tr>
+            <tr>
+              <td class="p-3.5 font-bold text-slate-950">Recepción, Lounge, Cafetería y Pro-Shop</td>
+              <td class="p-3.5 font-mono font-bold text-slate-900">45.000 € – 80.000 €</td>
+              <td class="p-3.5 text-slate-600">~10%</td>
+            </tr>
+            <tr>
+              <td class="p-3.5 font-bold text-slate-950">Proyecto de Arquitectura, Licencias y Tasas</td>
+              <td class="p-3.5 font-mono font-bold text-slate-900">25.000 € – 45.000 €</td>
+              <td class="p-3.5 text-slate-600">~6%</td>
+            </tr>
+            <tr class="bg-slate-50 font-bold">
+              <td class="p-3.5 text-slate-950">CAPEX TOTAL ESTIMADO</td>
+              <td class="p-3.5 font-mono text-slate-950 text-sm">480.000 € – 755.000 €</td>
+              <td class="p-3.5 text-slate-950">100%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="font-heading font-black text-xl sm:text-2xl text-slate-950 mt-10 mb-3">
+        2. Modelo de Ingresos Anuales (Facturación Bruta)
+      </h2>
+      <p>
+        Un club consolidado diversifica sus ingresos en 5 líneas independientes:
+      </p>
+      <ul class="list-disc pl-5 space-y-2 text-slate-700">
+        <li><strong>Alquiler de Pistas (65% del total)</strong>: Con un precio medio de 28 € a 36 € por hora y media (partida de 90 mins) y una ocupación media del 68%–74%, genera entre <strong>340.000 € y 480.000 €/año</strong>.</li>
+        <li><strong>Escuela de Pádel / Clases Particulares (15%)</strong>: Entre <strong>75.000 € y 120.000 €/año</strong> con márgenes muy elevados al compartir pista con 3–4 alumnos.</li>
+        <li><strong>Cafetería / Zona Social (12%)</strong>: La restauración aporta entre <strong>60.000 € y 110.000 €/año</strong> y resulta crítica para fidelizar al jugador en el post-partido.</li>
+        <li><strong>Torneos, Ligas y Eventos Corporativos (5%)</strong>: Entre <strong>30.000 € y 65.000 €/año</strong>.</li>
+        <li><strong>Tienda / Material Deportivo (3%)</strong>: Venta de pelotas, textil y palas: <strong>20.000 € a 40.000 €/año</strong>.</li>
+      </ul>
+      <p class="font-bold text-slate-950 pt-2">
+        Facturación Total Proyectada: 525.000 € a 815.000 € anuales.
+      </p>
+
+      <h2 class="font-heading font-black text-xl sm:text-2xl text-slate-950 mt-10 mb-3">
+        3. Costes Operativos y Margen EBITDA
+      </h2>
+      <p>
+        La estructura de costes (Opex) se reparte principalmente entre el arrendamiento del inmueble y el personal:
+      </p>
+      <ul class="list-disc pl-5 space-y-2 text-slate-700">
+        <li><strong>Alquiler de Nave Industrial</strong>: 2.800 m² a una renta de 5,50 € a 8,00 €/m²/mes supone entre <strong>185.000 € y 270.000 €/año</strong>.</li>
+        <li><strong>Personal (Recepción, Limpieza y Dirección)</strong>: <strong>95.000 € a 140.000 €/año</strong>.</li>
+        <li><strong>Suministros (Electricidad y Climatización)</strong>: <strong>35.000 € a 60.000 €/año</strong>.</li>
+        <li><strong>Seguros, Software de Reservas y Marketing</strong>: <strong>25.000 € a 45.000 €/año</strong>.</li>
+      </ul>
+      <p>
+        El <strong>EBITDA Operativo Estabilizado</strong> resultante se sitúa habitualmente entre <strong>185.000 € y 280.000 € al año</strong>, lo que representa un margen EBITDA operativo sobre ingresos del <strong>33% al 38%</strong>.
+      </p>
+
+      <h2 class="font-heading font-black text-xl sm:text-2xl text-slate-950 mt-10 mb-3">
+        4. Rentabilidad Financiera: TIR y Payback
+      </h2>
+      <p>
+        Para un inversor que desembolse el Capex con capital propio (sin apalancamiento bancario):
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6 text-center">
+        <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+          <span class="text-xs text-slate-500 font-mono block mb-1">TIR a 5 Años</span>
+          <span class="font-heading font-black text-2xl text-slate-950">24% – 36%</span>
+        </div>
+        <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+          <span class="text-xs text-slate-500 font-mono block mb-1">Periodo de Recuperación</span>
+          <span class="font-heading font-black text-2xl text-slate-950">22 – 32 meses</span>
+        </div>
+        <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+          <span class="text-xs text-slate-500 font-mono block mb-1">ROCE Anual</span>
+          <span class="font-heading font-black text-2xl text-slate-950">>28%</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CAJA DE CONTACTO CON JAVIER -->
+    <div class="mt-12 bg-slate-50 border border-slate-300 rounded-2xl p-6 sm:p-8">
+      <h3 class="font-heading font-black text-lg sm:text-xl text-slate-950 mb-2">
+        ¿Dispones de capital y buscas un proyecto de pádel validado o llave en mano?
+      </h3>
+      <p class="text-xs sm:text-sm text-slate-600 mb-5 leading-relaxed font-normal">
+        En Padelgree analizamos ubicaciones, presupuestos de obra y viabilidad financiera para inversores institucionales y family offices.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="https://wa.me/34680317486" target="_blank" rel="noopener" class="px-5 py-2.5 rounded-full bg-slate-950 hover:bg-slate-800 text-white font-heading font-bold text-xs uppercase tracking-wider text-center transition">
+          Definir inversión con Javier
+        </a>
+        <a href="mailto:javier@padelgree.com" class="px-5 py-2.5 rounded-full border border-slate-300 hover:border-slate-950 text-slate-950 font-heading font-bold text-xs uppercase tracking-wider text-center transition">
+          javier@padelgree.com
+        </a>
+      </div>
+    </div>
+
+  </article>
+
+  <!-- FOOTER -->
+  <footer class="w-full border-t border-slate-200 bg-white py-6">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+      <span class="font-heading font-bold text-slate-950">PADELGREE · The Confidential B2B Network for Padel Deals</span>
+      <div class="flex items-center gap-3">
+        <a href="/blog/" class="hover:text-slate-950 transition">Blog</a>
+        <span>·</span>
+        <a href="/" class="hover:text-slate-950 transition">Inicio</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
