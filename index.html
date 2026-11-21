@@ -228,114 +228,118 @@
   <!-- COMPENSADOR DE SCROLL -->
   <div class="h-14 sm:h-16 w-full" aria-hidden="true"></div>
 
-  <!-- SECCIÓN PRINCIPAL: ÚNICO TEXTO + 4 BOTONES EN FILA QUE ABARCAN TODA LA PANTALLA -->
-  <main class="w-full min-h-[calc(100vh-3.5rem)] sm:min-h-[calc(100vh-4rem)] flex flex-col justify-between px-4 sm:px-6 lg:px-8 xl:px-12 py-5 sm:py-7 max-w-[1440px] mx-auto">
+  <!-- SECCIÓN PRINCIPAL: ÚNICO TEXTO + 4 BOTONES COMPACTOS CENTRADOS EN PANTALLA -->
+  <main class="w-full min-h-[calc(100vh-3.5rem)] sm:min-h-[calc(100vh-4rem)] flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 py-10 sm:py-16 mx-auto">
     
-    <!-- ÚNICO TEXTO APARTE DE LOS BOTONES: TITULAR OFICIAL EN EL IDIOMA DE TURNO -->
-    <div class="w-full text-center pt-2 pb-5 sm:pb-7">
-      <h1 class="font-heading font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-slate-950 tracking-tight leading-tight max-w-4xl mx-auto" data-i18n="hero_title">
-        La red B2B confidencial para operaciones de pádel
-      </h1>
-    </div>
-
-    <!-- LOS 4 BOTONES EN FILA: DISEÑO MONOCROMÁTICO EDITORIAL DE ALTO CONTRASTE, CERO CLICHÉS IA -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 w-full flex-1 items-stretch mb-2">
+    <div class="max-w-5xl w-full mx-auto flex flex-col items-center">
       
-      <!-- BOTÓN 1: CADENA U OPERADOR -->
-      <button onclick="handleRoleClick('cadena')" class="group text-left bg-white border border-slate-300 hover:border-slate-950 rounded-2xl p-6 sm:p-7 transition-all duration-200 flex flex-col justify-between cursor-pointer hover:shadow-xl hover:-translate-y-0.5 shadow-xs h-full">
-        <div>
-          <div class="flex items-center justify-between mb-4">
-            <span class="font-heading font-black text-3xl sm:text-4xl text-slate-200 group-hover:text-slate-950 transition duration-200">01</span>
-            <span class="text-[10px] font-mono font-bold tracking-widest text-slate-400 group-hover:text-slate-600 uppercase transition" data-i18n="role1_tag">EXPANSIÓN</span>
-          </div>
-          <h2 class="font-heading font-black text-xl sm:text-2xl text-slate-950 leading-snug mb-2.5" data-i18n="role1_title">
-            Soy una cadena u operador
-          </h2>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal" data-i18n="role1_desc">
-            Busco adquirir clubes en marcha o naves para nuevas aperturas.
-          </p>
-        </div>
-        <div class="w-full mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-          <span class="font-heading font-bold text-xs uppercase tracking-wider text-slate-950 group-hover:underline" data-i18n="role1_cta">
-            Indicar búsqueda
-          </span>
-          <span class="w-8 h-8 rounded-full bg-slate-950 text-white flex items-center justify-center group-hover:scale-110 transition duration-200">
-            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
-          </span>
-        </div>
-      </button>
+      <!-- ÚNICO TEXTO APARTE DE LOS BOTONES: TITULAR OFICIAL EN EL IDIOMA DE TURNO -->
+      <div class="w-full text-center mb-8 sm:mb-10">
+        <h1 class="font-heading font-black text-2xl sm:text-3xl md:text-4xl text-slate-950 tracking-tight leading-tight max-w-2xl mx-auto" data-i18n="hero_title">
+          La red B2B confidencial para operaciones de pádel
+        </h1>
+      </div>
 
-      <!-- BOTÓN 2: DUEÑO DE CLUB -->
-      <button onclick="handleRoleClick('dueno')" class="group text-left bg-white border border-slate-300 hover:border-slate-950 rounded-2xl p-6 sm:p-7 transition-all duration-200 flex flex-col justify-between cursor-pointer hover:shadow-xl hover:-translate-y-0.5 shadow-xs h-full">
-        <div>
-          <div class="flex items-center justify-between mb-4">
-            <span class="font-heading font-black text-3xl sm:text-4xl text-slate-200 group-hover:text-slate-950 transition duration-200">02</span>
-            <span class="text-[10px] font-mono font-bold tracking-widest text-slate-400 group-hover:text-slate-600 uppercase transition" data-i18n="role2_tag">VENTA / SOCIO</span>
+      <!-- LOS 4 BOTONES EN FILA: ESTRECHOS, COMPACTOS, SIN HUECOS BLANCOS INNECESARIOS -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4.5 w-full">
+        
+        <!-- BOTÓN 1: CADENA U OPERADOR -->
+        <button onclick="handleRoleClick('cadena')" class="group text-left bg-white border border-slate-300 hover:border-slate-950 rounded-2xl p-5 transition-all duration-200 flex flex-col justify-between cursor-pointer hover:shadow-lg hover:-translate-y-0.5 shadow-2xs min-h-[190px] sm:min-h-[200px]">
+          <div>
+            <div class="flex items-center justify-between mb-2.5">
+              <span class="font-heading font-black text-2xl text-slate-300 group-hover:text-slate-950 transition duration-200">01</span>
+              <span class="text-[10px] font-mono font-bold tracking-widest text-slate-400 group-hover:text-slate-600 uppercase transition" data-i18n="role1_tag">EXPANSIÓN</span>
+            </div>
+            <h2 class="font-heading font-black text-base sm:text-lg text-slate-950 leading-snug mb-1.5" data-i18n="role1_title">
+              Soy una cadena u operador
+            </h2>
+            <p class="text-xs text-slate-600 leading-relaxed font-normal" data-i18n="role1_desc">
+              Busco adquirir clubes en marcha o naves para nuevas aperturas.
+            </p>
           </div>
-          <h2 class="font-heading font-black text-xl sm:text-2xl text-slate-950 leading-snug mb-2.5" data-i18n="role2_title">
-            Soy dueño de un club
-          </h2>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal" data-i18n="role2_desc">
-            Valoro vender mi club, dar entrada a un socio o unirme a una marca.
-          </p>
-        </div>
-        <div class="w-full mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-          <span class="font-heading font-bold text-xs uppercase tracking-wider text-slate-950 group-hover:underline" data-i18n="role2_cta">
-            Hablar en privado
-          </span>
-          <span class="w-8 h-8 rounded-full bg-slate-950 text-white flex items-center justify-center group-hover:scale-110 transition duration-200">
-            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
-          </span>
-        </div>
-      </button>
+          <div class="w-full mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="font-heading font-bold text-xs uppercase tracking-wider text-slate-950 group-hover:underline" data-i18n="role1_cta">
+              Indicar búsqueda
+            </span>
+            <span class="w-7 h-7 rounded-full bg-slate-950 text-white flex items-center justify-center group-hover:scale-105 transition duration-200">
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </span>
+          </div>
+        </button>
 
-      <!-- BOTÓN 3: PROPIETARIO DE INMUEBLE -->
-      <button onclick="handleRoleClick('inmueble')" class="group text-left bg-white border border-slate-300 hover:border-slate-950 rounded-2xl p-6 sm:p-7 transition-all duration-200 flex flex-col justify-between cursor-pointer hover:shadow-xl hover:-translate-y-0.5 shadow-xs h-full">
-        <div>
-          <div class="flex items-center justify-between mb-4">
-            <span class="font-heading font-black text-3xl sm:text-4xl text-slate-200 group-hover:text-slate-950 transition duration-200">03</span>
-            <span class="text-[10px] font-mono font-bold tracking-widest text-slate-400 group-hover:text-slate-600 uppercase transition" data-i18n="role3_tag">NAVES Y SUELO</span>
+        <!-- BOTÓN 2: DUEÑO DE CLUB -->
+        <button onclick="handleRoleClick('dueno')" class="group text-left bg-white border border-slate-300 hover:border-slate-950 rounded-2xl p-5 transition-all duration-200 flex flex-col justify-between cursor-pointer hover:shadow-lg hover:-translate-y-0.5 shadow-2xs min-h-[190px] sm:min-h-[200px]">
+          <div>
+            <div class="flex items-center justify-between mb-2.5">
+              <span class="font-heading font-black text-2xl text-slate-300 group-hover:text-slate-950 transition duration-200">02</span>
+              <span class="text-[10px] font-mono font-bold tracking-widest text-slate-400 group-hover:text-slate-600 uppercase transition" data-i18n="role2_tag">VENTA / SOCIO</span>
+            </div>
+            <h2 class="font-heading font-black text-base sm:text-lg text-slate-950 leading-snug mb-1.5" data-i18n="role2_title">
+              Soy dueño de un club
+            </h2>
+            <p class="text-xs text-slate-600 leading-relaxed font-normal" data-i18n="role2_desc">
+              Valoro vender mi club, dar entrada a un socio o unirme a una marca.
+            </p>
           </div>
-          <h2 class="font-heading font-black text-xl sm:text-2xl text-slate-950 leading-snug mb-2.5" data-i18n="role3_title">
-            Soy propietario de inmueble
-          </h2>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal" data-i18n="role3_desc">
-            Tengo una nave o suelo y busco un operador solvente para alquiler.
-          </p>
-        </div>
-        <div class="w-full mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-          <span class="font-heading font-bold text-xs uppercase tracking-wider text-slate-950 group-hover:underline" data-i18n="role3_cta">
-            Proponer espacio
-          </span>
-          <span class="w-8 h-8 rounded-full bg-slate-950 text-white flex items-center justify-center group-hover:scale-110 transition duration-200">
-            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
-          </span>
-        </div>
-      </button>
+          <div class="w-full mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="font-heading font-bold text-xs uppercase tracking-wider text-slate-950 group-hover:underline" data-i18n="role2_cta">
+              Hablar en privado
+            </span>
+            <span class="w-7 h-7 rounded-full bg-slate-950 text-white flex items-center justify-center group-hover:scale-105 transition duration-200">
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </span>
+          </div>
+        </button>
 
-      <!-- BOTÓN 4: INVERSOR -->
-      <button onclick="handleRoleClick('inversor')" class="group text-left bg-white border border-slate-300 hover:border-slate-950 rounded-2xl p-6 sm:p-7 transition-all duration-200 flex flex-col justify-between cursor-pointer hover:shadow-xl hover:-translate-y-0.5 shadow-xs h-full">
-        <div>
-          <div class="flex items-center justify-between mb-4">
-            <span class="font-heading font-black text-3xl sm:text-4xl text-slate-200 group-hover:text-slate-950 transition duration-200">04</span>
-            <span class="text-[10px] font-mono font-bold tracking-widest text-slate-400 group-hover:text-slate-600 uppercase transition" data-i18n="role4_tag">CAPITAL</span>
+        <!-- BOTÓN 3: PROPIETARIO DE INMUEBLE -->
+        <button onclick="handleRoleClick('inmueble')" class="group text-left bg-white border border-slate-300 hover:border-slate-950 rounded-2xl p-5 transition-all duration-200 flex flex-col justify-between cursor-pointer hover:shadow-lg hover:-translate-y-0.5 shadow-2xs min-h-[190px] sm:min-h-[200px]">
+          <div>
+            <div class="flex items-center justify-between mb-2.5">
+              <span class="font-heading font-black text-2xl text-slate-300 group-hover:text-slate-950 transition duration-200">03</span>
+              <span class="text-[10px] font-mono font-bold tracking-widest text-slate-400 group-hover:text-slate-600 uppercase transition" data-i18n="role3_tag">NAVES Y SUELO</span>
+            </div>
+            <h2 class="font-heading font-black text-base sm:text-lg text-slate-950 leading-snug mb-1.5" data-i18n="role3_title">
+              Soy propietario de inmueble
+            </h2>
+            <p class="text-xs text-slate-600 leading-relaxed font-normal" data-i18n="role3_desc">
+              Tengo una nave o suelo y busco un operador solvente para alquiler.
+            </p>
           </div>
-          <h2 class="font-heading font-black text-xl sm:text-2xl text-slate-950 leading-snug mb-2.5" data-i18n="role4_title">
-            Soy inversor
-          </h2>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal" data-i18n="role4_desc">
-            Dispongo de capital para proyectos llave en mano o franquicias.
-          </p>
-        </div>
-        <div class="w-full mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-          <span class="font-heading font-bold text-xs uppercase tracking-wider text-slate-950 group-hover:underline" data-i18n="role4_cta">
-            Definir inversión
-          </span>
-          <span class="w-8 h-8 rounded-full bg-slate-950 text-white flex items-center justify-center group-hover:scale-110 transition duration-200">
-            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
-          </span>
-        </div>
-      </button>
+          <div class="w-full mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="font-heading font-bold text-xs uppercase tracking-wider text-slate-950 group-hover:underline" data-i18n="role3_cta">
+              Proponer espacio
+            </span>
+            <span class="w-7 h-7 rounded-full bg-slate-950 text-white flex items-center justify-center group-hover:scale-105 transition duration-200">
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </span>
+          </div>
+        </button>
+
+        <!-- BOTÓN 4: INVERSOR -->
+        <button onclick="handleRoleClick('inversor')" class="group text-left bg-white border border-slate-300 hover:border-slate-950 rounded-2xl p-5 transition-all duration-200 flex flex-col justify-between cursor-pointer hover:shadow-lg hover:-translate-y-0.5 shadow-2xs min-h-[190px] sm:min-h-[200px]">
+          <div>
+            <div class="flex items-center justify-between mb-2.5">
+              <span class="font-heading font-black text-2xl text-slate-300 group-hover:text-slate-950 transition duration-200">04</span>
+              <span class="text-[10px] font-mono font-bold tracking-widest text-slate-400 group-hover:text-slate-600 uppercase transition" data-i18n="role4_tag">CAPITAL</span>
+            </div>
+            <h2 class="font-heading font-black text-base sm:text-lg text-slate-950 leading-snug mb-1.5" data-i18n="role4_title">
+              Soy inversor
+            </h2>
+            <p class="text-xs text-slate-600 leading-relaxed font-normal" data-i18n="role4_desc">
+              Dispongo de capital para proyectos llave en mano o franquicias.
+            </p>
+          </div>
+          <div class="w-full mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="font-heading font-bold text-xs uppercase tracking-wider text-slate-950 group-hover:underline" data-i18n="role4_cta">
+              Definir inversión
+            </span>
+            <span class="w-7 h-7 rounded-full bg-slate-950 text-white flex items-center justify-center group-hover:scale-105 transition duration-200">
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </span>
+          </div>
+        </button>
+
+      </div>
 
     </div>
 
