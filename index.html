@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Padelgree | Red Confidencial de Operaciones y Expansión de Pádel</title>
-  <meta name="description" content="Intermediación privada y confidencial entre operadores de pádel, dueños de clubes, propietarios de inmuebles e inversores.">
-  <meta name="author" content="Javier Villoria">
+  <title>Padelgree | Operaciones Confidenciales de Pádel</title>
+  <meta name="description" content="Intermediación privada entre operadores, dueños de clubes, propietarios de inmuebles e inversores de pádel.">
   <meta name="robots" content="index, follow">
 
   <!-- Google Fonts: Outfit (Titulares) + Plus Jakarta Sans (Lectura) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -22,16 +21,6 @@
           fontFamily: {
             heading: ['Outfit', 'sans-serif'],
             sans: ['Plus Jakarta Sans', 'sans-serif'],
-          },
-          colors: {
-            brand: {
-              green: '#0F2F1D',
-              greenLight: '#18492E',
-              gold: '#C9A227',
-              goldLight: '#E5C048',
-              slateBg: '#F8FAFC',
-              dark: '#0B1626',
-            }
           }
         }
       }
@@ -42,696 +31,287 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
-<body class="bg-[#F8FAFC] text-slate-900 font-sans font-medium antialiased selection:bg-[#0F2F1D] selection:text-white">
+<body class="bg-white text-slate-900 font-sans font-medium antialiased selection:bg-slate-900 selection:text-white">
 
-  <!-- HEADER FIJO -->
-  <header class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-2xs">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+  <!-- HEADER FIJO MINIMALISTA -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
       
-      <!-- LOGO TIPOGRÁFICO PADELGREE -->
-      <a href="#" class="flex items-center gap-2 group shrink-0" aria-label="Padelgree Home">
-        <div class="w-8 h-8 rounded-lg bg-[#0F2F1D] flex items-center justify-center text-white font-heading font-black text-sm group-hover:scale-105 transition shadow-xs">
-          PG
-        </div>
-        <div class="flex flex-col">
-          <span class="font-heading font-black text-xl sm:text-2xl text-slate-950 tracking-wider leading-none">
-            PADELGREE
-          </span>
-          <span class="text-[9px] font-bold text-[#C9A227] tracking-widest uppercase mt-0.5" data-i18n="tagline_nav">
-            B2B Padel Network
-          </span>
-        </div>
+      <!-- LOGO -->
+      <a href="#" class="flex items-center gap-2.5">
+        <span class="font-heading font-black text-2xl tracking-wider text-slate-950">PADELGREE</span>
+        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest hidden sm:inline">· Off-Market</span>
       </a>
 
-      <!-- NAVEGACIÓN DESKTOP -->
-      <nav class="hidden md:flex items-center gap-6 text-xs uppercase font-heading font-black tracking-wider text-slate-700">
-        <a href="#perfiles" class="hover:text-[#0F2F1D] transition" data-i18n="nav_perfiles">Perfiles</a>
-        <a href="#deal-board" class="hover:text-[#0F2F1D] transition" data-i18n="nav_deals">Operaciones</a>
-        <a href="#como-funciona" class="hover:text-[#0F2F1D] transition" data-i18n="nav_how">Cómo funciona</a>
-        <a href="#sobre-mi" class="hover:text-[#0F2F1D] transition" data-i18n="nav_about">Contacto</a>
-      </nav>
-
-      <!-- BOTONES DE ACCIÓN + IDIOMA -->
-      <div class="flex items-center gap-2.5 sm:gap-3">
-        <!-- Selector Idioma Compacto -->
-        <button type="button" onclick="toggleLanguage()" id="lang-btn" class="px-2.5 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 border border-slate-200 text-xs font-black text-slate-900 transition flex items-center gap-1 cursor-pointer">
-          <i data-lucide="globe" class="w-3.5 h-3.5 text-slate-600"></i>
-          <span id="current-lang" class="uppercase">EN</span>
+      <!-- DERECHA: IDIOMA + CONTACTO -->
+      <div class="flex items-center gap-3">
+        <button type="button" onclick="toggleLanguage()" id="lang-btn" class="px-2.5 py-1 rounded-full border border-slate-300 text-xs font-bold text-slate-700 hover:border-slate-900 transition cursor-pointer">
+          <span id="current-lang">EN</span>
         </button>
 
-        <!-- Botón Contactar / Proponer Operación -->
-        <button onclick="openModal('general')" class="inline-flex items-center gap-1.5 px-4 sm:px-5 py-2 rounded-full bg-[#0F2F1D] hover:bg-[#C9A227] text-white hover:text-slate-950 font-heading font-black text-xs uppercase tracking-wider transition shadow-sm hover:scale-105 active:scale-95 cursor-pointer">
-          <span data-i18n="btn_submit_deal">Cuéntame qué buscas</span>
-          <i data-lucide="arrow-right" class="w-3.5 h-3.5 stroke-[2.5]"></i>
+        <button onclick="openModal('general')" class="px-4 py-2 rounded-full bg-slate-950 hover:bg-slate-800 text-white font-heading font-bold text-xs uppercase tracking-wider transition cursor-pointer">
+          <span data-i18n="btn_contact">Contactar</span>
         </button>
       </div>
+
     </div>
   </header>
 
-  <!-- COMPENSADOR DE SCROLL OBLIGATORIO -->
-  <div class="h-16 sm:h-20 w-full shrink-0" aria-hidden="true"></div>
+  <!-- COMPENSADOR DE SCROLL -->
+  <div class="h-16 sm:h-20 w-full" aria-hidden="true"></div>
 
-  <!-- HERO COMPACTO -->
-  <section class="relative pt-8 sm:pt-12 pb-10 sm:pb-14 overflow-hidden border-b border-slate-200/90 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <!-- BADGE CONFIDENCIALIDAD -->
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-[#0F2F1D] text-xs font-bold mb-4 shadow-2xs">
-        <i data-lucide="shield-check" class="w-4 h-4 text-[#0F2F1D]"></i>
-        <span data-i18n="hero_badge">Intermediación 100% Confidencial · Off-Market</span>
-      </div>
-
-      <!-- TITULAR Y SUBTÍTULO DIRECTOS -->
-      <div class="max-w-4xl space-y-3">
-        <h1 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl text-slate-950 tracking-tight leading-[1.1]" data-i18n="hero_title">
-          Conectamos a quienes quieren hacer crecer un negocio de pádel.
-        </h1>
-        <p class="text-base sm:text-lg text-slate-600 font-normal leading-relaxed max-w-3xl" data-i18n="hero_subtitle">
-          Presentaciones privadas entre cadenas, dueños de clubes, propietarios de inmuebles e inversores. Tú decides cuándo compartir tu identidad y con quién.
-        </p>
-      </div>
-
-      <!-- LOS 4 BOTONES DE ENTRADA («SOY UN...») -->
-      <div id="perfiles" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4 mt-8 pt-2">
-        
-        <!-- PUERTA 1: CADENA U OPERADOR -->
-        <button onclick="handleRoleClick('cadena')" class="group text-left bg-slate-50 hover:bg-white border-2 border-slate-200/90 hover:border-[#0F2F1D] rounded-2xl p-4 sm:p-5 shadow-2xs hover:shadow-lg transition-all duration-200 flex flex-col justify-between cursor-pointer">
-          <div class="space-y-2">
-            <div class="w-10 h-10 rounded-xl bg-emerald-100/80 text-[#0F2F1D] flex items-center justify-center group-hover:scale-110 transition">
-              <i data-lucide="building-2" class="w-5 h-5"></i>
-            </div>
-            <h3 class="font-heading font-black text-base text-slate-950 group-hover:text-[#0F2F1D] transition" data-i18n="card_role1_title">
-              Soy una cadena u operador
-            </h3>
-            <p class="text-xs text-slate-600 leading-relaxed" data-i18n="card_role1_desc">
-              Busco adquirir clubes en funcionamiento, sumar franquiciados o asegurar naves para nuevas aperturas.
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-200/60 flex items-center justify-between text-xs font-heading font-black text-[#0F2F1D] group-hover:text-[#C9A227] transition">
-            <span data-i18n="card_cta_search">Indicar búsqueda activa</span>
-            <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition"></i>
-          </div>
-        </button>
-
-        <!-- PUERTA 2: DUEÑO DE CLUB -->
-        <button onclick="handleRoleClick('dueno')" class="group text-left bg-slate-50 hover:bg-white border-2 border-slate-200/90 hover:border-[#0F2F1D] rounded-2xl p-4 sm:p-5 shadow-2xs hover:shadow-lg transition-all duration-200 flex flex-col justify-between cursor-pointer">
-          <div class="space-y-2">
-            <div class="w-10 h-10 rounded-xl bg-amber-100/80 text-amber-900 flex items-center justify-center group-hover:scale-110 transition">
-              <i data-lucide="trophy" class="w-5 h-5"></i>
-            </div>
-            <h3 class="font-heading font-black text-base text-slate-950 group-hover:text-[#0F2F1D] transition" data-i18n="card_role2_title">
-              Soy dueño de un club
-            </h3>
-            <p class="text-xs text-slate-600 leading-relaxed" data-i18n="card_role2_desc">
-              Me planteo vender mi club, dar entrada a un socio inversor o integrarme en una cadena para ganar escala.
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-200/60 flex items-center justify-between text-xs font-heading font-black text-[#0F2F1D] group-hover:text-[#C9A227] transition">
-            <span data-i18n="card_cta_explore">Explorar opciones en privado</span>
-            <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition"></i>
-          </div>
-        </button>
-
-        <!-- PUERTA 3: PROPIETARIO DE INMUEBLE -->
-        <button onclick="handleRoleClick('inmueble')" class="group text-left bg-slate-50 hover:bg-white border-2 border-slate-200/90 hover:border-[#0F2F1D] rounded-2xl p-4 sm:p-5 shadow-2xs hover:shadow-lg transition-all duration-200 flex flex-col justify-between cursor-pointer">
-          <div class="space-y-2">
-            <div class="w-10 h-10 rounded-xl bg-blue-100/80 text-blue-900 flex items-center justify-center group-hover:scale-110 transition">
-              <i data-lucide="warehouse" class="w-5 h-5"></i>
-            </div>
-            <h3 class="font-heading font-black text-base text-slate-950 group-hover:text-[#0F2F1D] transition" data-i18n="card_role3_title">
-              Soy propietario de inmueble
-            </h3>
-            <p class="text-xs text-slate-600 leading-relaxed" data-i18n="card_role3_desc">
-              Tengo una nave (2.000+ m²) o suelo comercial y busco un operador solvente de pádel para alquiler a largo plazo.
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-200/60 flex items-center justify-between text-xs font-heading font-black text-[#0F2F1D] group-hover:text-[#C9A227] transition">
-            <span data-i18n="card_cta_venue">Proponer espacio</span>
-            <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition"></i>
-          </div>
-        </button>
-
-        <!-- PUERTA 4: INVERSOR -->
-        <button onclick="handleRoleClick('inversor')" class="group text-left bg-slate-50 hover:bg-white border-2 border-slate-200/90 hover:border-[#0F2F1D] rounded-2xl p-4 sm:p-5 shadow-2xs hover:shadow-lg transition-all duration-200 flex flex-col justify-between cursor-pointer">
-          <div class="space-y-2">
-            <div class="w-10 h-10 rounded-xl bg-purple-100/80 text-purple-900 flex items-center justify-center group-hover:scale-110 transition">
-              <i data-lucide="coins" class="w-5 h-5"></i>
-            </div>
-            <h3 class="font-heading font-black text-base text-slate-950 group-hover:text-[#0F2F1D] transition" data-i18n="card_role4_title">
-              Soy inversor
-            </h3>
-            <p class="text-xs text-slate-600 leading-relaxed" data-i18n="card_role4_desc">
-              Dispongo de capital y busco un proyecto llave en mano, unirme como socio financiero o asociarme a una franquicia.
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-200/60 flex items-center justify-between text-xs font-heading font-black text-[#0F2F1D] group-hover:text-[#C9A227] transition">
-            <span data-i18n="card_cta_invest">Definir criterios de inversión</span>
-            <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition"></i>
-          </div>
-        </button>
-
-      </div>
+  <!-- SECCIÓN PRINCIPAL: 4 BOTONES CLAROS Y CERO TEXTO DE RELLENO -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 pt-10 sm:pt-16 pb-12 sm:pb-20">
+    
+    <!-- TITULAR LIMPIO -->
+    <div class="max-w-3xl mb-10 sm:mb-14">
+      <h1 class="font-heading font-black text-3xl sm:text-5xl text-slate-950 tracking-tight leading-tight" data-i18n="hero_title">
+        Intermediación confidencial para operaciones de pádel.
+      </h1>
+      <p class="text-sm sm:text-base text-slate-600 mt-3 font-normal" data-i18n="hero_subtitle">
+        Presentaciones privadas entre operadores, propietarios e inversores. Sin difusión pública.
+      </p>
     </div>
-  </section>
 
-  <!-- CONFIDENTIAL DEAL BOARD (EJEMPLOS ILUSTRATIVOS DE OPERACIONES) -->
-  <section id="deal-board" class="py-12 sm:py-16 bg-[#F8FAFC]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- LOS 4 BOTONES CLAROS -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
       
-      <!-- CABECERA DE SECCIÓN COMPACTA -->
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6 sm:mb-8">
+      <!-- BOTÓN 1: CADENA U OPERADOR -->
+      <button onclick="handleRoleClick('cadena')" class="group text-left bg-white hover:bg-slate-50 border-2 border-slate-200 hover:border-slate-950 rounded-2xl p-6 sm:p-7 transition duration-150 flex flex-col justify-between cursor-pointer shadow-2xs hover:shadow-md min-h-[140px] sm:min-h-[160px]">
         <div>
-          <span class="text-xs font-black uppercase tracking-wider text-[#C9A227]" data-i18n="board_tag">
-            Casos y Oportunidades
-          </span>
-          <h2 class="font-heading font-black text-2xl sm:text-3xl text-slate-950 mt-1" data-i18n="board_title">
-            Ejemplos de Operaciones en Gestión
+          <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block mb-1">01</span>
+          <h2 class="font-heading font-black text-xl sm:text-2xl text-slate-950 group-hover:text-black transition" data-i18n="role1_title">
+            Soy una cadena u operador
           </h2>
-          <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl" data-i18n="board_subtitle">
-            Fichas ilustrativas del tipo de activos y búsquedas que gestionamos en privado. Los datos de identidad y ubicación exacta solo se revelan bajo autorización mutua.
+          <p class="text-xs sm:text-sm text-slate-600 mt-1" data-i18n="role1_desc">
+            Busco adquirir clubes en funcionamiento o naves para expandirme.
           </p>
         </div>
+        <div class="mt-4 flex items-center gap-1.5 text-xs font-heading font-bold text-slate-950 group-hover:translate-x-1 transition duration-150">
+          <span data-i18n="role1_cta">Indicar búsqueda</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </div>
+      </button>
 
-        <!-- FILTROS RÁPIDOS -->
-        <div class="flex items-center gap-1.5 overflow-x-auto pb-1 shrink-0">
-          <button onclick="filterDeals('all')" class="filter-btn px-3 py-1.5 rounded-full text-xs font-bold transition cursor-pointer bg-[#0F2F1D] text-white" data-filter="all" data-i18n="filter_all">Todos</button>
-          <button onclick="filterDeals('mna')" class="filter-btn px-3 py-1.5 rounded-full text-xs font-bold transition cursor-pointer bg-white text-slate-700 hover:bg-slate-200 border border-slate-200" data-filter="mna" data-i18n="filter_mna">Compraventa / M&A</button>
-          <button onclick="filterDeals('venue')" class="filter-btn px-3 py-1.5 rounded-full text-xs font-bold transition cursor-pointer bg-white text-slate-700 hover:bg-slate-200 border border-slate-200" data-filter="venue" data-i18n="filter_venue">Inmuebles</button>
-          <button onclick="filterDeals('partner')" class="filter-btn px-3 py-1.5 rounded-full text-xs font-bold transition cursor-pointer bg-white text-slate-700 hover:bg-slate-200 border border-slate-200" data-filter="partner" data-i18n="filter_partner">Socio / Franquicia</button>
+      <!-- BOTÓN 2: DUEÑO DE CLUB -->
+      <button onclick="handleRoleClick('dueno')" class="group text-left bg-white hover:bg-slate-50 border-2 border-slate-200 hover:border-slate-950 rounded-2xl p-6 sm:p-7 transition duration-150 flex flex-col justify-between cursor-pointer shadow-2xs hover:shadow-md min-h-[140px] sm:min-h-[160px]">
+        <div>
+          <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block mb-1">02</span>
+          <h2 class="font-heading font-black text-xl sm:text-2xl text-slate-950 group-hover:text-black transition" data-i18n="role2_title">
+            Soy dueño de un club
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1" data-i18n="role2_desc">
+            Valoro vender mi club, dar entrada a un socio o unirme a una marca.
+          </p>
+        </div>
+        <div class="mt-4 flex items-center gap-1.5 text-xs font-heading font-bold text-slate-950 group-hover:translate-x-1 transition duration-150">
+          <span data-i18n="role2_cta">Hablar en privado</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </div>
+      </button>
+
+      <!-- BOTÓN 3: PROPIETARIO DE INMUEBLE -->
+      <button onclick="handleRoleClick('inmueble')" class="group text-left bg-white hover:bg-slate-50 border-2 border-slate-200 hover:border-slate-950 rounded-2xl p-6 sm:p-7 transition duration-150 flex flex-col justify-between cursor-pointer shadow-2xs hover:shadow-md min-h-[140px] sm:min-h-[160px]">
+        <div>
+          <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block mb-1">03</span>
+          <h2 class="font-heading font-black text-xl sm:text-2xl text-slate-950 group-hover:text-black transition" data-i18n="role3_title">
+            Soy propietario de inmueble
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1" data-i18n="role3_desc">
+            Tengo una nave o suelo y busco un operador solvente para alquiler.
+          </p>
+        </div>
+        <div class="mt-4 flex items-center gap-1.5 text-xs font-heading font-bold text-slate-950 group-hover:translate-x-1 transition duration-150">
+          <span data-i18n="role3_cta">Proponer espacio</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </div>
+      </button>
+
+      <!-- BOTÓN 4: INVERSOR -->
+      <button onclick="handleRoleClick('inversor')" class="group text-left bg-white hover:bg-slate-50 border-2 border-slate-200 hover:border-slate-950 rounded-2xl p-6 sm:p-7 transition duration-150 flex flex-col justify-between cursor-pointer shadow-2xs hover:shadow-md min-h-[140px] sm:min-h-[160px]">
+        <div>
+          <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block mb-1">04</span>
+          <h2 class="font-heading font-black text-xl sm:text-2xl text-slate-950 group-hover:text-black transition" data-i18n="role4_title">
+            Soy inversor
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1" data-i18n="role4_desc">
+            Dispongo de capital y busco un proyecto llave en mano o franquicia.
+          </p>
+        </div>
+        <div class="mt-4 flex items-center gap-1.5 text-xs font-heading font-bold text-slate-950 group-hover:translate-x-1 transition duration-150">
+          <span data-i18n="role4_cta">Definir inversión</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </div>
+      </button>
+
+    </div>
+
+    <!-- EJEMPLOS DE OPERACIONES (SOBRIO, SIN COLORINES) -->
+    <section class="mt-16 sm:mt-24 pt-12 border-t border-slate-200">
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <h2 class="font-heading font-black text-xl sm:text-2xl text-slate-950" data-i18n="deals_title">
+            Ejemplos de operaciones
+          </h2>
+          <p class="text-xs text-slate-500 mt-0.5" data-i18n="deals_subtitle">
+            Casos ilustrativos de activos y búsquedas gestionadas en privado.
+          </p>
         </div>
       </div>
 
-      <!-- REJILLA DE TARJETAS (100% CLICKABLES EN BLOQUES DE 3) -->
-      <div id="deals-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         
-        <!-- CARD 1: MADRID (M&A) -->
-        <div data-category="mna" onclick="openModalWithRef('Club 7 Pistas Indoor (Madrid Sur)', 'Venta 100%')" class="deal-card bg-white border-2 border-slate-200/90 hover:border-[#0F2F1D] rounded-2xl p-5 shadow-2xs hover:shadow-lg transition flex flex-col justify-between cursor-pointer group">
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-50 text-[#0F2F1D] border border-emerald-200" data-i18n="badge_sale">
-                Venta 100% (M&A)
-              </span>
-              <span class="text-[10px] font-bold text-slate-400">Ref. Ejemplo #ES-014</span>
-            </div>
-            <div>
-              <h3 class="font-heading font-black text-lg text-slate-950 group-hover:text-[#0F2F1D] transition">
-                Club 7 Pistas Indoor
-              </h3>
-              <p class="text-xs text-slate-500 font-medium">Madrid (Corredor del Henares) · España</p>
-            </div>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Instalación consolidada con 10m de altura libre, pistas panorámicas, cafetería y aparcamiento propio. Traspaso de negocio por relevo generacional del fundador.
-            </p>
-            <!-- MÉTRICAS EN CAJA COMPACTA -->
-            <div class="grid grid-cols-3 gap-2 bg-slate-50 rounded-xl p-2.5 text-center border border-slate-200/60">
-              <div>
-                <span class="block text-[10px] text-slate-400 font-bold uppercase">Pistas</span>
-                <span class="font-heading font-black text-xs text-slate-900">7 Indoor</span>
-              </div>
-              <div>
-                <span class="block text-[10px] text-slate-400 font-bold uppercase">Altura</span>
-                <span class="font-heading font-black text-xs text-slate-900">10,0 m</span>
-              </div>
-              <div>
-                <span class="block text-[10px] text-slate-400 font-bold uppercase">Estado</span>
-                <span class="font-heading font-black text-xs text-emerald-700">En marcha</span>
-              </div>
-            </div>
+        <!-- EJEMPLO 1 -->
+        <div onclick="openModalWithRef('Club 7 Pistas Indoor (Madrid)', 'Compraventa')" class="border border-slate-200 hover:border-slate-900 rounded-xl p-5 transition cursor-pointer flex flex-col justify-between group">
+          <div class="space-y-2">
+            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Madrid · Venta 100%</span>
+            <h3 class="font-heading font-bold text-base text-slate-950">Club 7 Pistas Indoor</h3>
+            <p class="text-xs text-slate-600">Instalación en marcha con 10m de altura, cafetería y parking. Relevo generacional del titular.</p>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-heading font-black text-[#0F2F1D] group-hover:text-[#C9A227] transition">
-            <span data-i18n="cta_similar">Busco algo parecido →</span>
-            <i data-lucide="chevron-right" class="w-4 h-4"></i>
-          </div>
+          <span class="mt-4 text-xs font-bold text-slate-950 group-hover:underline flex items-center gap-1" data-i18n="cta_similar">Busco algo parecido →</span>
         </div>
 
-        <!-- CARD 2: LONDRES (INMUEBLE / NAVE) -->
-        <div data-category="venue" onclick="openModalWithRef('Nave Logística 3.600 m² (Greater London / Surrey)', 'Alquiler Inmueble')" class="deal-card bg-white border-2 border-slate-200/90 hover:border-[#0F2F1D] rounded-2xl p-5 shadow-2xs hover:shadow-lg transition flex flex-col justify-between cursor-pointer group">
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-50 text-blue-900 border border-blue-200" data-i18n="badge_lease">
-                Alquiler Inmueble
-              </span>
-              <span class="text-[10px] font-bold text-slate-400">Ref. Ejemplo #UK-003</span>
-            </div>
-            <div>
-              <h3 class="font-heading font-black text-lg text-slate-950 group-hover:text-[#0F2F1D] transition">
-                Nave Diáfana 3.600 m²
-              </h3>
-              <p class="text-xs text-slate-500 font-medium">Surrey / Greater London · Reino Unido</p>
-            </div>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Nave sin columnas intermedias con capacidad para 8-10 pistas cubiertas. Propietario institucional busca operador de pádel solvente para contrato a 15 años.
-            </p>
-            <div class="grid grid-cols-3 gap-2 bg-slate-50 rounded-xl p-2.5 text-center border border-slate-200/60">
-              <div>
-                <span class="block text-[10px] text-slate-400 font-bold uppercase">Superficie</span>
-                <span class="font-heading font-black text-xs text-slate-900">3.600 m²</span>
-              </div>
-              <div>
-                <span class="block text-[10px] text-slate-400 font-bold uppercase">Altura libre</span>
-                <span class="font-heading font-black text-xs text-slate-900">10,5 m</span>
-              </div>
-              <div>
-                <span class="block text-[10px] text-slate-400 font-bold uppercase">Contrato</span>
-                <span class="font-heading font-black text-xs text-blue-800">15 años</span>
-              </div>
-            </div>
+        <!-- EJEMPLO 2 -->
+        <div onclick="openModalWithRef('Nave 3.600 m² (Londres)', 'Alquiler')" class="border border-slate-200 hover:border-slate-900 rounded-xl p-5 transition cursor-pointer flex flex-col justify-between group">
+          <div class="space-y-2">
+            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Surrey (UK) · Alquiler</span>
+            <h3 class="font-heading font-bold text-base text-slate-950">Nave Diáfana 3.600 m²</h3>
+            <p class="text-xs text-slate-600">Altura 10,5m sin columnas. Propietario busca operador de pádel para contrato a 15 años.</p>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-heading font-black text-[#0F2F1D] group-hover:text-[#C9A227] transition">
-            <span data-i18n="cta_similar_venue">Tengo un activo similar →</span>
-            <i data-lucide="chevron-right" class="w-4 h-4"></i>
-          </div>
+          <span class="mt-4 text-xs font-bold text-slate-950 group-hover:underline flex items-center gap-1" data-i18n="cta_similar_venue">Tengo un activo similar →</span>
         </div>
 
-        <!-- CARD 3: MILÁN (SOCIO / EXPANSIÓN) -->
-        <div data-category="partner" onclick="openModalWithRef('Club 5 Pistas Indoor (Milán / Monza)', 'Entrada de Socio')" class="deal-card bg-white border-2 border-slate-200/90 hover:border-[#0F2F1D] rounded-2xl p-5 shadow-2xs hover:shadow-lg transition flex flex-col justify-between cursor-pointer group">
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-purple-50 text-purple-900 border border-purple-200" data-i18n="badge_partner">
-                Socio Capitalista
-              </span>
-              <span class="text-[10px] font-bold text-slate-400">Ref. Ejemplo #IT-021</span>
-            </div>
-            <div>
-              <h3 class="font-heading font-black text-lg text-slate-950 group-hover:text-[#0F2F1D] transition">
-                Club Boutique 5 Pistas
-              </h3>
-              <p class="text-xs text-slate-500 font-medium">Monza / Área de Milán · Italia</p>
-            </div>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Club rentable con ocupación superior al 75%. El socio gestor busca incorporar socio minoritario/mayoritario o aliarse a cadena para financiar ampliación a 8 pistas.
-            </p>
-            <div class="grid grid-cols-3 gap-2 bg-slate-50 rounded-xl p-2.5 text-center border border-slate-200/60">
-              <div>
-                <span class="block text-[10px] text-slate-400 font-bold uppercase">Actual</span>
-                <span class="font-heading font-black text-xs text-slate-900">5 Pistas</span>
-              </div>
-              <div>
-                <span class="block text-[10px] text-slate-400 font-bold uppercase">Proyecto</span>
-                <span class="font-heading font-black text-xs text-slate-900">+3 Pistas</span>
-              </div>
-              <div>
-                <span class="block text-[10px] text-slate-400 font-bold uppercase">Opción</span>
-                <span class="font-heading font-black text-xs text-purple-800">49% o Rebrand</span>
-              </div>
-            </div>
+        <!-- EJEMPLO 3 -->
+        <div onclick="openModalWithRef('Club 5 Pistas (Milán)', 'Socio / Rebrand')" class="border border-slate-200 hover:border-slate-900 rounded-xl p-5 transition cursor-pointer flex flex-col justify-between group">
+          <div class="space-y-2">
+            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Milán · Entrada de Socio</span>
+            <h3 class="font-heading font-bold text-base text-slate-950">Club 5 Pistas Indoor</h3>
+            <p class="text-xs text-slate-600">Ocupación >75%. Busca socio financiero o alianza con cadena para financiar 3 pistas más.</p>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-heading font-black text-[#0F2F1D] group-hover:text-[#C9A227] transition">
-            <span data-i18n="cta_similar">Busco algo parecido →</span>
-            <i data-lucide="chevron-right" class="w-4 h-4"></i>
-          </div>
-        </div>
-
-        <!-- CARD 4: LYON (INVERSOR / PROYECTO LLAVE EN MANO) -->
-        <div data-category="partner" onclick="openModalWithRef('Inversor Privado 750k€ (Lyon)', 'Inversión / Franquicia')" class="deal-card bg-white border-2 border-slate-200/90 hover:border-[#0F2F1D] rounded-2xl p-5 shadow-2xs hover:shadow-lg transition flex flex-col justify-between cursor-pointer group">
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200" data-i18n="badge_invest">
-                Inversión Directa
-              </span>
-              <span class="text-[10px] font-bold text-slate-400">Ref. Ejemplo #FR-008</span>
-            </div>
-            <div>
-              <h3 class="font-heading font-black text-lg text-slate-950 group-hover:text-[#0F2F1D] transition">
-                Inversor Privado (750k €)
-              </h3>
-              <p class="text-xs text-slate-500 font-medium">Lyon / Rhône-Alpes · Francia</p>
-            </div>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Family office con fondos pre-aprobados busca asociarse a franquicia de pádel reconocida o promotor con proyecto listo para abrir club de 6 a 8 pistas indoor.
-            </p>
-            <div class="grid grid-cols-3 gap-2 bg-slate-50 rounded-xl p-2.5 text-center border border-slate-200/60">
-              <div>
-                <span class="block text-[10px] text-slate-400 font-bold uppercase">Capital</span>
-                <span class="font-heading font-black text-xs text-slate-900">750.000 €</span>
-              </div>
-              <div>
-                <span class="block text-[10px] text-slate-400 font-bold uppercase">Objetivo</span>
-                <span class="font-heading font-black text-xs text-slate-900">Franquicia</span>
-              </div>
-              <div>
-                <span class="block text-[10px] text-slate-400 font-bold uppercase">Tamaño</span>
-                <span class="font-heading font-black text-xs text-amber-800">6-8 pistas</span>
-              </div>
-            </div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-heading font-black text-[#0F2F1D] group-hover:text-[#C9A227] transition">
-            <span data-i18n="cta_similar">Busco algo parecido →</span>
-            <i data-lucide="chevron-right" class="w-4 h-4"></i>
-          </div>
-        </div>
-
-        <!-- CARD 5: VALENCIA (REBRAND / CADENA) -->
-        <div data-category="mna" onclick="openModalWithRef('Club 6 Pistas Cubiertas (Valencia)', 'Integración Cadena')" class="deal-card bg-white border-2 border-slate-200/90 hover:border-[#0F2F1D] rounded-2xl p-5 shadow-2xs hover:shadow-lg transition flex flex-col justify-between cursor-pointer group">
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-50 text-[#0F2F1D] border border-emerald-200" data-i18n="badge_rebrand">
-                Integración a Cadena
-              </span>
-              <span class="text-[10px] font-bold text-slate-400">Ref. Ejemplo #ES-029</span>
-            </div>
-            <div>
-              <h3 class="font-heading font-black text-lg text-slate-950 group-hover:text-[#0F2F1D] transition">
-                Club 6 Pistas Cubiertas
-              </h3>
-              <p class="text-xs text-slate-500 font-medium">Área Metropolitana de Valencia · España</p>
-            </div>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Nave en régimen de alquiler ventajoso (le quedan 11 años de contrato). El titular busca venta total o integración bajo la marca de una cadena para optimizar comercialización.
-            </p>
-            <div class="grid grid-cols-3 gap-2 bg-slate-50 rounded-xl p-2.5 text-center border border-slate-200/60">
-              <div>
-                <span class="block text-[10px] text-slate-400 font-bold uppercase">Pistas</span>
-                <span class="font-heading font-black text-xs text-slate-900">6 Cubiertas</span>
-              </div>
-              <div>
-                <span class="block text-[10px] text-slate-400 font-bold uppercase">Alquiler</span>
-                <span class="font-heading font-black text-xs text-slate-900">11 años rest.</span>
-              </div>
-              <div>
-                <span class="block text-[10px] text-slate-400 font-bold uppercase">Socios</span>
-                <span class="font-heading font-black text-xs text-emerald-700">+1.200</span>
-              </div>
-            </div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-heading font-black text-[#0F2F1D] group-hover:text-[#C9A227] transition">
-            <span data-i18n="cta_similar">Busco algo parecido →</span>
-            <i data-lucide="chevron-right" class="w-4 h-4"></i>
-          </div>
-        </div>
-
-        <!-- CARD 6: DÜSSELDORF (INMUEBLE EN PARQUE COMERCIAL) -->
-        <div data-category="venue" onclick="openModalWithRef('Parque Comercial 2.800 m² (Düsseldorf)', 'Alquiler Operador')" class="deal-card bg-white border-2 border-slate-200/90 hover:border-[#0F2F1D] rounded-2xl p-5 shadow-2xs hover:shadow-lg transition flex flex-col justify-between cursor-pointer group">
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-50 text-blue-900 border border-blue-200" data-i18n="badge_lease">
-                Alquiler Inmueble
-              </span>
-              <span class="text-[10px] font-bold text-slate-400">Ref. Ejemplo #DE-002</span>
-            </div>
-            <div>
-              <h3 class="font-heading font-black text-lg text-slate-950 group-hover:text-[#0F2F1D] transition">
-                Parque Comercial 2.800 m²
-              </h3>
-              <p class="text-xs text-slate-500 font-medium">Renania del Norte-Westfalia · Alemania</p>
-            </div>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Módulo anexo a centro de fitness y zona comercial con amplio parking. Fondo promotor busca cadena internacional de pádel con experiencia de gestión demostrada.
-            </p>
-            <div class="grid grid-cols-3 gap-2 bg-slate-50 rounded-xl p-2.5 text-center border border-slate-200/60">
-              <div>
-                <span class="block text-[10px] text-slate-400 font-bold uppercase">Espacio</span>
-                <span class="font-heading font-black text-xs text-slate-900">2.800 m²</span>
-              </div>
-              <div>
-                <span class="block text-[10px] text-slate-400 font-bold uppercase">Altura</span>
-                <span class="font-heading font-black text-xs text-slate-900">9,2 m</span>
-              </div>
-              <div>
-                <span class="block text-[10px] text-slate-400 font-bold uppercase">Parking</span>
-                <span class="font-heading font-black text-xs text-blue-800">120 plazas</span>
-              </div>
-            </div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-heading font-black text-[#0F2F1D] group-hover:text-[#C9A227] transition">
-            <span data-i18n="cta_similar_venue">Tengo un activo similar →</span>
-            <i data-lucide="chevron-right" class="w-4 h-4"></i>
-          </div>
+          <span class="mt-4 text-xs font-bold text-slate-950 group-hover:underline flex items-center gap-1" data-i18n="cta_similar">Busco algo parecido →</span>
         </div>
 
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CÓMO FUNCIONA (3 PASOS CLAROS Y CERO RELLENO) -->
-  <section id="como-funciona" class="py-12 sm:py-16 bg-white border-y border-slate-200/90">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- CÓMO FUNCIONA (3 LÍNEAS DIRECTAS) -->
+    <section class="mt-16 sm:mt-20 pt-12 border-t border-slate-200">
+      <h2 class="font-heading font-black text-xl sm:text-2xl text-slate-950 mb-6" data-i18n="how_title">
+        Cómo funciona
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-slate-600 leading-relaxed">
+        <div>
+          <span class="font-heading font-black text-slate-950 text-sm block mb-1" data-i18n="how_step1">1. Búsqueda o activo concreto</span>
+          Nos indicas qué buscas o qué tienes. Cero exposición pública de datos, nombres o ubicaciones exactas.
+        </div>
+        <div>
+          <span class="font-heading font-black text-slate-950 text-sm block mb-1" data-i18n="how_step2">2. Filtro y cruce en privado</span>
+          Comprobamos la viabilidad técnica, la titularidad y los fondos antes de iniciar cualquier contacto.
+        </div>
+        <div>
+          <span class="font-heading font-black text-slate-950 text-sm block mb-1" data-i18n="how_step3">3. Presentación con doble opt-in</span>
+          Solo si ambas partes aceptan explícitamente conocerse y bajo acuerdo de confidencialidad, cruzamos contactos.
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO DIRECTO -->
+    <section class="mt-16 sm:mt-20 pt-10 border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div>
+        <span class="font-heading font-black text-base text-slate-950 block">Javier Villoria</span>
+        <span class="text-xs text-slate-500">Fundador de Padelgree · Contacto directo</span>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/34680317486" target="_blank" rel="noopener" class="px-3.5 py-1.5 rounded-full border border-slate-300 hover:border-slate-900 text-slate-900 text-xs font-bold transition">
+          WhatsApp (+34 680 31 74 86)
+        </a>
+        <a href="mailto:javier@padelgree.com" class="px-3.5 py-1.5 rounded-full border border-slate-300 hover:border-slate-900 text-slate-900 text-xs font-bold transition">
+          javier@padelgree.com
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL RÁPIDO DE CONTACTO -->
+  <div id="modal-form" class="fixed inset-0 z-50 bg-slate-950/40 backdrop-blur-xs hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-xl border border-slate-200 relative">
       
-      <div class="text-center max-w-2xl mx-auto mb-10">
-        <span class="text-xs font-black uppercase tracking-wider text-[#C9A227]" data-i18n="process_tag">
-          Metodología
-        </span>
-        <h2 class="font-heading font-black text-2xl sm:text-3xl text-slate-950 mt-1" data-i18n="process_title">
-          Cómo gestionamos cada operación
-        </h2>
-        <p class="text-xs sm:text-sm text-slate-600 mt-1" data-i18n="process_subtitle">
-          Cero difusión pública. Procesos directos entre partes cualificadas.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        
-        <!-- PASO 1 -->
-        <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 relative">
-          <div class="w-9 h-9 rounded-full bg-[#0F2F1D] text-white flex items-center justify-center font-heading font-black text-sm mb-4">
-            1
-          </div>
-          <h3 class="font-heading font-black text-lg text-slate-950 mb-2" data-i18n="step1_title">
-            Búsqueda o activo concreto
-          </h3>
-          <p class="text-xs text-slate-600 leading-relaxed" data-i18n="step1_desc">
-            Nos dices qué buscas o qué tienes (zona acotada, tipo de activo, rango económico y plazo). No publicamos nombres, direcciones exactas ni datos contables sensibles.
-          </p>
-        </div>
-
-        <!-- PASO 2 -->
-        <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 relative">
-          <div class="w-9 h-9 rounded-full bg-[#0F2F1D] text-white flex items-center justify-center font-heading font-black text-sm mb-4">
-            2
-          </div>
-          <h3 class="font-heading font-black text-lg text-slate-950 mb-2" data-i18n="step2_title">
-            Filtro y validación previa
-          </h3>
-          <p class="text-xs text-slate-600 leading-relaxed" data-i18n="step2_desc">
-            Revisamos la viabilidad real: comprobamos que el decisor es el titular legítimo, la viabilidad urbanística/altura de la nave o la capacidad de fondos del comprador.
-          </p>
-        </div>
-
-        <!-- PASO 3 -->
-        <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 relative">
-          <div class="w-9 h-9 rounded-full bg-[#0F2F1D] text-white flex items-center justify-center font-heading font-black text-sm mb-4">
-            3
-          </div>
-          <h3 class="font-heading font-black text-lg text-slate-950 mb-2" data-i18n="step3_title">
-            Presentación con doble opt-in
-          </h3>
-          <p class="text-xs text-slate-600 leading-relaxed" data-i18n="step3_desc">
-            Informamos a ambas partes de quién quiere avanzar. Solo si ambos aceptan expresamente y bajo acuerdo de confidencialidad (NDA), cruzamos identidades para la reunión.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- QUIÉN ESTÁ DETRÁS (CREDIBILIDAD Y CONTACTO DIRECTO) -->
-  <section id="sobre-mi" class="py-12 sm:py-16 bg-[#F8FAFC]">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="bg-white border-2 border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm">
-        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
-          
-          <!-- AVATAR / INICIALES -->
-          <div class="w-20 h-20 rounded-2xl bg-[#0F2F1D] text-white flex flex-col items-center justify-center font-heading font-black text-2xl shrink-0 shadow-md">
-            JV
-            <span class="text-[9px] text-[#C9A227] tracking-widest uppercase">Director</span>
-          </div>
-
-          <!-- INFORMACIÓN -->
-          <div class="space-y-3 text-center sm:text-left flex-1">
-            <div>
-              <span class="text-[10px] font-bold text-[#C9A227] uppercase tracking-wider" data-i18n="founder_tag">
-                Intermediación Directa
-              </span>
-              <h2 class="font-heading font-black text-2xl text-slate-950">
-                Javier Villoria
-              </h2>
-              <p class="text-xs text-slate-500 font-medium" data-i18n="founder_role">
-                Fundador de Padelgree · Director de Save My Play & CoolPadel Studios
-              </p>
-            </div>
-
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed" data-i18n="founder_bio">
-              En contacto directo y continuo con más de 1.500 clubes, operadores de pádel y propietarios en España, Italia, Francia y Reino Unido. Padelgree nace para canalizar de forma profesional y confidencial las operaciones de compraventa, expansión y alquiler que surgen a diario en la industria.
-            </p>
-
-            <!-- VÍAS DE CONTACTO DIRECTO -->
-            <div class="pt-2 flex flex-wrap items-center justify-center sm:justify-start gap-3">
-              <a href="https://wa.me/34680317486" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-heading font-black text-xs transition shadow-2xs">
-                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
-                <span>WhatsApp directo (+34 680 31 74 86)</span>
-              </a>
-
-              <a href="mailto:javier@padelgree.com" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-900 border border-slate-200 font-heading font-black text-xs transition">
-                <i data-lucide="mail" class="w-3.5 h-3.5 text-slate-600"></i>
-                <span>javier@padelgree.com</span>
-              </a>
-
-              <a href="https://www.linkedin.com/in/javier-villoria-soleto-606737298/" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-900 border border-slate-200 font-heading font-black text-xs transition">
-                <i data-lucide="linkedin" class="w-3.5 h-3.5 text-blue-600"></i>
-                <span>LinkedIn</span>
-              </a>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FOOTER LIMPIO -->
-  <footer class="bg-white border-t border-slate-200/90 py-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-      
-      <div class="flex items-center gap-2">
-        <span class="font-heading font-black text-sm text-slate-950 tracking-wider">PADELGREE</span>
-        <span>•</span>
-        <span>© 2026 Padelgree.com · Todos los derechos reservados.</span>
-      </div>
-
-      <div class="flex items-center gap-4 font-bold text-slate-600">
-        <span>Confidencialidad garantizada</span>
-        <span>•</span>
-        <a href="mailto:javier@padelgree.com" class="hover:text-[#0F2F1D]">javier@padelgree.com</a>
-      </div>
-
-    </div>
-  </footer>
-
-  <!-- MODAL / FORMULARIO RÁPIDO DE 5 PREGUNTAS -->
-  <div id="modal-form" class="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-xs hidden flex items-center justify-center p-4">
-    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-7 shadow-2xl border border-slate-200 relative animate-in fade-in zoom-in-95 duration-150">
-      
-      <!-- CERRAR -->
-      <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-900 p-1.5 rounded-full hover:bg-slate-100 transition cursor-pointer">
+      <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-900 p-1 cursor-pointer">
         <i data-lucide="x" class="w-5 h-5"></i>
       </button>
 
-      <!-- ENCABEZADO MODAL -->
-      <div class="mb-5">
-        <span class="text-[10px] font-black uppercase tracking-wider text-[#C9A227]" id="modal-badge">
-          Intermediación Confidencial
-        </span>
-        <h3 class="font-heading font-black text-xl text-slate-950 mt-0.5" id="modal-title">
-          Cuéntanos qué buscas
-        </h3>
-        <p class="text-xs text-slate-500 mt-1" id="modal-desc">
-          Tus datos no se compartirán públicamente. Solo Javier Villoria revisará tu información.
-        </p>
-      </div>
+      <h3 class="font-heading font-black text-lg text-slate-950 mb-1" id="modal-title">
+        Cuéntanos qué buscas
+      </h3>
+      <p class="text-xs text-slate-500 mb-4">
+        Información confidencial revisada directamente por Javier.
+      </p>
 
-      <!-- FORMULARIO -->
-      <form id="deal-form" onsubmit="submitForm(event)" class="space-y-3.5">
-        
-        <!-- 1. PERFIL -->
+      <form onsubmit="submitForm(event)" class="space-y-3">
         <div>
-          <label class="block text-xs font-bold text-slate-700 mb-1" data-i18n="f_label_role">¿Cuál es tu situación o perfil?</label>
-          <select id="f-role" class="w-full px-3 py-2 rounded-xl border border-slate-200 bg-slate-50 text-xs font-semibold text-slate-900 focus:bg-white focus:border-[#0F2F1D] focus:outline-none transition">
-            <option value="cadena">🏢 Soy una cadena u operador (Busco expansión)</option>
-            <option value="dueno">🎾 Soy dueño de un club (Valoro venta, socio o marca)</option>
-            <option value="inmueble">🏭 Soy propietario de un inmueble (Ofrezco nave/suelo)</option>
-            <option value="inversor">💼 Soy inversor (Busco proyecto, socio o franquicia)</option>
-            <option value="otro">Otro tipo de consulta profesional</option>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Perfil</label>
+          <select id="f-role" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-slate-900">
+            <option value="cadena">Cadena u Operador (Busco expansión)</option>
+            <option value="dueno">Dueño de Club (Valoro venta o socio)</option>
+            <option value="inmueble">Propietario de Inmueble (Ofrezco nave)</option>
+            <option value="inversor">Inversor (Busco proyecto o franquicia)</option>
+            <option value="otro">Otro</option>
           </select>
         </div>
 
-        <!-- 2. NOMBRE + CONTACTO -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <label class="block text-xs font-bold text-slate-700 mb-1" data-i18n="f_label_name">Tu nombre</label>
-            <input type="text" id="f-name" required placeholder="Ej. Carlos Martínez" class="w-full px-3 py-2 rounded-xl border border-slate-200 bg-slate-50 text-xs font-medium text-slate-900 focus:bg-white focus:border-[#0F2F1D] focus:outline-none transition">
-          </div>
-          <div>
-            <label class="block text-xs font-bold text-slate-700 mb-1" data-i18n="f_label_contact">WhatsApp o Email</label>
-            <input type="text" id="f-contact" required placeholder="+34 600... o email" class="w-full px-3 py-2 rounded-xl border border-slate-200 bg-slate-50 text-xs font-medium text-slate-900 focus:bg-white focus:border-[#0F2F1D] focus:outline-none transition">
-          </div>
-        </div>
-
-        <!-- 3. CIUDAD / ZONA -->
         <div>
-          <label class="block text-xs font-bold text-slate-700 mb-1" data-i18n="f_label_location">Zona geográfica / Ciudad de interés</label>
-          <input type="text" id="f-location" required placeholder="Ej. Madrid Norte, Milán, Londres..." class="w-full px-3 py-2 rounded-xl border border-slate-200 bg-slate-50 text-xs font-medium text-slate-900 focus:bg-white focus:border-[#0F2F1D] focus:outline-none transition">
+          <label class="block text-xs font-bold text-slate-700 mb-1">Nombre</label>
+          <input type="text" id="f-name" required placeholder="Tu nombre" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-slate-900">
         </div>
 
-        <!-- 4. QUÉ BUSCAS O QUÉ TIENES -->
         <div>
-          <label class="block text-xs font-bold text-slate-700 mb-1" data-i18n="f_label_details">Detalles de la búsqueda o activo</label>
-          <textarea id="f-details" rows="2" placeholder="Ej. Buscamos nave de mínimo 6 pistas para alquilar este año / Me planteo traspasar mi club de 5 pistas..." class="w-full px-3 py-2 rounded-xl border border-slate-200 bg-slate-50 text-xs font-medium text-slate-900 focus:bg-white focus:border-[#0F2F1D] focus:outline-none transition"></textarea>
+          <label class="block text-xs font-bold text-slate-700 mb-1">WhatsApp o Email</label>
+          <input type="text" id="f-contact" required placeholder="+34 600... o email" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-slate-900">
         </div>
 
-        <!-- BOTÓN ENVIAR -->
-        <div class="pt-2">
-          <button type="submit" class="w-full py-2.5 rounded-full bg-[#0F2F1D] hover:bg-[#C9A227] text-white hover:text-slate-950 font-heading font-black text-xs uppercase tracking-wider transition shadow-sm cursor-pointer flex items-center justify-center gap-1.5">
-            <span data-i18n="f_btn_submit">Enviar consulta confidencial</span>
-            <i data-lucide="send" class="w-3.5 h-3.5"></i>
-          </button>
-          <p class="text-[10px] text-center text-slate-400 mt-2">
-            Respuesta directa de Javier en menos de 24 horas laborables.
-          </p>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Zona geográfica</label>
+          <input type="text" id="f-location" required placeholder="Ciudad o provincia" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-slate-900">
         </div>
 
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Detalles breves</label>
+          <textarea id="f-details" rows="2" placeholder="Qué buscas o qué tienes..." class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-slate-900"></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-2.5 rounded-full bg-slate-950 hover:bg-slate-800 text-white font-heading font-bold text-xs uppercase tracking-wider transition cursor-pointer mt-2">
+          Enviar consulta privada
+        </button>
       </form>
     </div>
   </div>
 
-  <!-- SCRIPT DE INTERACCIÓN Y MULTILINGÜE -->
+  <!-- SCRIPT -->
   <script>
-    // Inicializar iconos Lucide
     lucide.createIcons();
 
-    // Filtros del Deal Board
-    function filterDeals(category) {
-      // Actualizar estilos botones
-      document.querySelectorAll('.filter-btn').forEach(btn => {
-        if(btn.dataset.filter === category) {
-          btn.className = "filter-btn px-3 py-1.5 rounded-full text-xs font-bold transition cursor-pointer bg-[#0F2F1D] text-white";
-        } else {
-          btn.className = "filter-btn px-3 py-1.5 rounded-full text-xs font-bold transition cursor-pointer bg-white text-slate-700 hover:bg-slate-200 border border-slate-200";
-        }
-      });
-
-      // Filtrar tarjetas
-      const cards = document.querySelectorAll('.deal-card');
-      cards.forEach(card => {
-        if (category === 'all' || card.dataset.category === category) {
-          card.classList.remove('hidden');
-        } else {
-          card.classList.add('hidden');
-        }
-      });
-    }
-
-    // Modal Handler
-    function openModal(context = 'general') {
-      const modal = document.getElementById('modal-form');
-      modal.classList.remove('hidden');
+    function openModal() {
+      document.getElementById('modal-form').classList.remove('hidden');
     }
 
     function closeModal() {
-      const modal = document.getElementById('modal-form');
-      modal.classList.add('hidden');
+      document.getElementById('modal-form').classList.add('hidden');
     }
 
     function handleRoleClick(roleKey) {
       openModal();
       const select = document.getElementById('f-role');
-      if (select) {
-        select.value = roleKey;
-      }
+      if (select) select.value = roleKey;
     }
 
     function openModalWithRef(title, type) {
       openModal();
       const details = document.getElementById('f-details');
-      if (details) {
-        details.value = `Interés en operación similar a: ${title} (${type}). `;
-      }
+      if (details) details.value = `Interés en: ${title} (${type}). `;
     }
 
-    // Enviar formulario (Genera enlace WhatsApp / mailto directo para máxima inmediatez)
     function submitForm(e) {
       e.preventDefault();
       const role = document.getElementById('f-role').value;
@@ -740,108 +320,68 @@
       const location = document.getElementById('f-location').value;
       const details = document.getElementById('f-details').value;
 
-      const text = `Hola Javier, te escribo desde Padelgree:%0A%0A` +
+      const text = `Hola Javier, te escribo desde Padelgree:%0A` +
                    `• Perfil: ${role}%0A` +
                    `• Nombre: ${name}%0A` +
                    `• Contacto: ${contact}%0A` +
                    `• Zona: ${location}%0A` +
                    `• Detalles: ${details}`;
 
-      // Abrir WhatsApp con el mensaje preformateado
       window.open(`https://wa.me/34680317486?text=${text}`, '_blank');
       closeModal();
     }
 
-    // Diccionario i18n ultra-ligero para alternar ES / EN
     let currentLang = 'es';
     const translations = {
       en: {
-        tagline_nav: 'B2B Padel Network',
-        nav_perfiles: 'Profiles',
-        nav_deals: 'Deals',
-        nav_how: 'How it works',
-        nav_about: 'Contact',
-        btn_submit_deal: 'Tell me what you seek',
-        hero_badge: '100% Confidential Brokerage · Off-Market',
-        hero_title: 'Connecting those who grow the business of padel.',
-        hero_subtitle: 'Private introductions between padel chains, club owners, commercial landlords, and vetted investors. You decide when and with whom to share your identity.',
-        card_role1_title: 'I run a padel chain',
-        card_role1_desc: 'Seeking operating clubs to acquire, franchisees, or prime warehouses for new openings.',
-        card_role2_title: 'I own a padel club',
-        card_role2_desc: 'Considering selling my club, bringing in an equity partner, or joining a chain for scale.',
-        card_role3_title: 'I own a venue / warehouse',
-        card_role3_desc: 'Have 2,000+ sqm industrial or retail space seeking a solvent padel operator for long-term lease.',
-        card_role4_title: 'I am an investor',
-        card_role4_desc: 'Have capital ready for turnkey projects, minority/majority club equity, or franchise partnerships.',
-        card_cta_search: 'Submit active search',
-        card_cta_explore: 'Explore options in private',
-        card_cta_venue: 'Submit warehouse',
-        card_cta_invest: 'Define investment scope',
-        board_tag: 'Cases & Deal Flow',
-        board_title: 'Illustrative Deal Examples in Management',
-        board_subtitle: 'Representative examples of the assets and searches we manage privately. Names and exact locations are only revealed under mutual consent.',
-        filter_all: 'All',
-        filter_mna: 'Buyout / M&A',
-        filter_venue: 'Warehouses & Land',
-        filter_partner: 'Partners & Franchise',
+        btn_contact: 'Contact',
+        hero_title: 'Confidential matching for padel deals.',
+        hero_subtitle: 'Private introductions between operators, landlords, and investors. Zero public listings.',
+        role1_title: 'I run a padel chain or operator',
+        role1_desc: 'Seeking operating clubs to acquire or prime venues for new openings.',
+        role1_cta: 'Submit search',
+        role2_title: 'I own a padel club',
+        role2_desc: 'Considering selling, bringing in an equity partner, or joining a brand.',
+        role2_cta: 'Talk in private',
+        role3_title: 'I own a commercial venue',
+        role3_desc: 'Have a warehouse or land seeking a solvent padel tenant for long-term lease.',
+        role3_cta: 'Submit venue',
+        role4_title: 'I am an investor',
+        role4_desc: 'Have capital ready for turnkey club projects or established franchises.',
+        role4_cta: 'Define investment',
+        deals_title: 'Illustrative deal examples',
+        deals_subtitle: 'Representative cases of assets and searches managed in private.',
         cta_similar: 'Seeking something similar →',
         cta_similar_venue: 'Have a similar venue →',
-        process_tag: 'Methodology',
-        process_title: 'How we manage every deal',
-        process_subtitle: 'Zero public exposure. Direct matching between vetted decision-makers.',
-        step1_title: '1. Concrete search or asset',
-        step1_desc: 'Tell us what you have or seek (exact criteria, financial range, timeline). No public listings or sensitive financials are posted online.',
-        step2_title: '2. Private vetting & match',
-        step2_desc: 'We verify true ownership, technical clearance (ceiling heights, zoning) and buyer proof of funds before making any move.',
-        step3_title: '3. Double opt-in introduction',
-        step3_desc: 'Both parties are informed of who wants to advance. Only after mutual written consent and NDA, we introduce the decision-makers.',
-        founder_tag: 'Direct Mediation',
-        founder_role: 'Founder of Padelgree · Director at Save My Play & CoolPadel Studios',
-        founder_bio: 'In continuous contact with over 1,500 clubs and padel operators across Europe. Padelgree was built to professionally and discreetly handle M&A, franchise and commercial leasing requests emerging daily in the padel market.'
+        how_title: 'How it works',
+        how_step1: '1. Concrete search or asset',
+        how_step2: '2. Private vetting & match',
+        how_step3: '3. Double opt-in introduction'
       },
       es: {
-        tagline_nav: 'B2B Padel Network',
-        nav_perfiles: 'Perfiles',
-        nav_deals: 'Operaciones',
-        nav_how: 'Cómo funciona',
-        nav_about: 'Contacto',
-        btn_submit_deal: 'Cuéntame qué buscas',
-        hero_badge: 'Intermediación 100% Confidencial · Off-Market',
-        hero_title: 'Conectamos a quienes quieren hacer crecer un negocio de pádel.',
-        hero_subtitle: 'Presentaciones privadas entre cadenas, dueños de clubes, propietarios de inmuebles e inversores. Tú decides cuándo compartir tu identidad y con quién.',
-        card_role1_title: 'Soy una cadena u operador',
-        card_role1_desc: 'Busco adquirir clubes en funcionamiento, sumar franquiciados o asegurar naves para nuevas aperturas.',
-        card_role2_title: 'Soy dueño de un club',
-        card_role2_desc: 'Me planteo vender mi club, dar entrada a un socio inversor o integrarme en una cadena para ganar escala.',
-        card_role3_title: 'Soy propietario de inmueble',
-        card_role3_desc: 'Tengo una nave (2.000+ m²) o suelo comercial y busco un operador solvente de pádel para alquiler a largo plazo.',
-        card_role4_title: 'Soy inversor',
-        card_role4_desc: 'Dispongo de capital y busco un proyecto llave en mano, unirme como socio financiero o asociarme a una franquicia.',
-        card_cta_search: 'Indicar búsqueda activa',
-        card_cta_explore: 'Explorar opciones en privado',
-        card_cta_venue: 'Proponer espacio',
-        card_cta_invest: 'Definir criterios de inversión',
-        board_tag: 'Casos y Oportunidades',
-        board_title: 'Ejemplos de Operaciones en Gestión',
-        board_subtitle: 'Fichas ilustrativas del tipo de activos y búsquedas que gestionamos en privado. Los datos de identidad y ubicación exacta solo se revelan bajo autorización mutua.',
-        filter_all: 'Todos',
-        filter_mna: 'Compraventa / M&A',
-        filter_venue: 'Inmuebles',
-        filter_partner: 'Socio / Franquicia',
+        btn_contact: 'Contactar',
+        hero_title: 'Intermediación confidencial para operaciones de pádel.',
+        hero_subtitle: 'Presentaciones privadas entre operadores, propietarios e inversores. Sin difusión pública.',
+        role1_title: 'Soy una cadena u operador',
+        role1_desc: 'Busco adquirir clubes en funcionamiento o naves para expandirme.',
+        role1_cta: 'Indicar búsqueda',
+        role2_title: 'Soy dueño de un club',
+        role2_desc: 'Valoro vender mi club, dar entrada a un socio o unirme a una marca.',
+        role2_cta: 'Hablar en privado',
+        role3_title: 'Soy propietario de inmueble',
+        role3_desc: 'Tengo una nave o suelo y busco un operador solvente para alquiler.',
+        role3_cta: 'Proponer espacio',
+        role4_title: 'Soy inversor',
+        role4_desc: 'Dispongo de capital y busco un proyecto llave en mano o franquicia.',
+        role4_cta: 'Definir inversión',
+        deals_title: 'Ejemplos de operaciones',
+        deals_subtitle: 'Casos ilustrativos de activos y búsquedas gestionadas en privado.',
         cta_similar: 'Busco algo parecido →',
         cta_similar_venue: 'Tengo un activo similar →',
-        process_tag: 'Metodología',
-        process_title: 'Cómo gestionamos cada operación',
-        process_subtitle: 'Cero difusión pública. Procesos directos entre partes cualificadas.',
-        step1_title: 'Búsqueda o activo concreto',
-        step1_desc: 'Nos dices qué buscas o qué tienes (zona acotada, tipo de activo, rango económico y plazo). No publicamos nombres, direcciones exactas ni datos contables sensibles.',
-        step2_title: 'Filtro y validación previa',
-        step2_desc: 'Revisamos la viabilidad real: comprobamos que el decisor es el titular legítimo, la viabilidad urbanística/altura de la nave o la capacidad de fondos del comprador.',
-        step3_title: 'Presentación con doble opt-in',
-        step3_desc: 'Informamos a ambas partes de quién quiere avanzar. Solo si ambos aceptan expresamente y bajo acuerdo de confidencialidad (NDA), cruzamos identidades para la reunión.',
-        founder_tag: 'Intermediación Directa',
-        founder_role: 'Fundador de Padelgree · Director de Save My Play & CoolPadel Studios',
-        founder_bio: 'En contacto directo y continuo con más de 1.500 clubes, operadores de pádel y propietarios en España, Italia, Francia y Reino Unido. Padelgree nace para canalizar de forma profesional y confidencial las operaciones de compraventa, expansión y alquiler que surgen a diario en la industria.'
+        how_title: 'Cómo funciona',
+        how_step1: '1. Búsqueda o activo concreto',
+        how_step2: '2. Filtro y cruce en privado',
+        how_step3: '3. Presentación con doble opt-in'
       }
     };
 
@@ -852,9 +392,7 @@
       const t = translations[currentLang];
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if (t[key]) {
-          el.innerText = t[key];
-        }
+        if (t[key]) el.innerText = t[key];
       });
       lucide.createIcons();
     }
