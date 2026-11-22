@@ -19,14 +19,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://padelgree.com/blog/"/>
   </url>
   <url>
-    <loc>https://padelgree.com/blog/valoracion-clubes-padel-multiplos-ebitda/</loc>
-    <lastmod>2026-11-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://padelgree.com/blog/valoracion-clubes-padel-multiplos-ebitda/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://padelgree.com/blog/valoracion-clubes-padel-multiplos-ebitda/"/>
-  </url>
-  <url>
     <loc>https://padelgree.com/blog/cuanto-cuesta-montar-un-club-de-padel-indoor/</loc>
     <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
@@ -43,6 +35,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://padelgree.com/blog/cuanto-gana-un-club-de-padel-facturacion-rentabilidad/"/>
   </url>
   <url>
+    <loc>https://padelgree.com/blog/cuanto-cuesta-construir-una-pista-de-padel/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://padelgree.com/blog/cuanto-cuesta-construir-una-pista-de-padel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://padelgree.com/blog/cuanto-cuesta-construir-una-pista-de-padel/"/>
+  </url>
+  <url>
+    <loc>https://padelgree.com/blog/valoracion-clubes-padel-multiplos-ebitda/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://padelgree.com/blog/valoracion-clubes-padel-multiplos-ebitda/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://padelgree.com/blog/valoracion-clubes-padel-multiplos-ebitda/"/>
+  </url>
+  <url>
     <loc>https://padelgree.com/blog/traspaso-club-padel-guia-legal-contratos-precio/</loc>
     <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
@@ -57,6 +65,46 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://padelgree.com/blog/contrato-alquiler-nave-industrial-club-padel/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://padelgree.com/blog/contrato-alquiler-nave-industrial-club-padel/"/>
+  </url>
+  <url>
+    <loc>https://padelgree.com/blog/licencia-apertura-club-padel-normativa-requisitos/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://padelgree.com/blog/licencia-apertura-club-padel-normativa-requisitos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://padelgree.com/blog/licencia-apertura-club-padel-normativa-requisitos/"/>
+  </url>
+  <url>
+    <loc>https://padelgree.com/blog/climatizacion-naves-padel-indoor-sistemas-costes/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://padelgree.com/blog/climatizacion-naves-padel-indoor-sistemas-costes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://padelgree.com/blog/climatizacion-naves-padel-indoor-sistemas-costes/"/>
+  </url>
+  <url>
+    <loc>https://padelgree.com/blog/inversion-pistas-padel-retorno-roi-payback/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://padelgree.com/blog/inversion-pistas-padel-retorno-roi-payback/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://padelgree.com/blog/inversion-pistas-padel-retorno-roi-payback/"/>
+  </url>
+  <url>
+    <loc>https://padelgree.com/blog/software-gestion-clubes-padel-comparativa/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://padelgree.com/blog/software-gestion-clubes-padel-comparativa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://padelgree.com/blog/software-gestion-clubes-padel-comparativa/"/>
+  </url>
+  <url>
+    <loc>https://padelgree.com/blog/expansion-cadenas-padel-espana-europa/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://padelgree.com/blog/expansion-cadenas-padel-espana-europa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://padelgree.com/blog/expansion-cadenas-padel-espana-europa/"/>
   </url>
   <url>
     <loc>https://padelgree.com/blog/requisitos-tecnicos-naves-industriales-padel/</loc>

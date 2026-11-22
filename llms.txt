@@ -12,11 +12,17 @@
 
 ## Technical Guides & Specialized Padel Research (Blog Hub)
 - [Blog Hub Padelgree](https://padelgree.com/blog/): Portal de análisis técnico, valoraciones y guías de inversión en pádel.
-- [Guía de Valoración y Múltiplos EBITDA en Clubes de Pádel](https://padelgree.com/blog/valoracion-clubes-padel-multiplos-ebitda/): Múltiplos de 3,5x a 5,5x EBITDA, amortización de activos tangibles y contratos de alquiler.
 - [¿Cuánto Cuesta Montar un Club de Pádel Indoor? Presupuesto Real](https://padelgree.com/blog/cuanto-cuesta-montar-un-club-de-padel-indoor/): Presupuesto partida por partida (solera, pistas panorámicas, vestuarios, climatización y licencias).
 - [¿Cuánto Dinero Gana un Club de Pádel? Facturación Real y Márgenes](https://padelgree.com/blog/cuanto-gana-un-club-de-padel-facturacion-rentabilidad/): Facturación por pista (55k€–85k€/año), escuela, torneos, cafetería, Opex y EBITDA del 36%.
+- [¿Cuánto Cuesta Construir una Pista de Pádel? Precios y Materiales](https://padelgree.com/blog/cuanto-cuesta-construir-una-pista-de-padel/): Pistas estándar vs panorámicas (18k€–25k€), vidrio templado de 12mm, césped monofilamento y solera.
+- [Guía de Valoración y Múltiplos EBITDA en Clubes de Pádel](https://padelgree.com/blog/valoracion-clubes-padel-multiplos-ebitda/): Múltiplos de 3,5x a 5,5x EBITDA, amortización de activos tangibles y contratos de alquiler.
 - [Traspaso de Club de Pádel: Guía Legal, Contratos y Precio](https://padelgree.com/blog/traspaso-club-padel-guia-legal-contratos-precio/): Asset Deal vs Share Deal, cesión de alquiler bajo art. 32 LAU, cambio de licencia y subrogación laboral.
 - [El Contrato de Alquiler de Nave para Pádel: Cláusulas y Carencia](https://padelgree.com/blog/contrato-alquiler-nave-industrial-club-padel/): Negociación de 4-8 meses de carencia, resolución por denegación de licencia y duración a 10-15 años.
+- [Licencia de Apertura para Club de Pádel: Normativa y Trámites](https://padelgree.com/blog/licencia-apertura-club-padel-normativa-requisitos/): Compatibilidad urbanística deportiva, estudio acústico, protección de incendios y accesibilidad PMR.
+- [Climatización y Ventilación en Naves de Pádel Indoor](https://padelgree.com/blog/climatizacion-naves-padel-indoor-sistemas-costes/): Ventiladores HVLS, enfriamiento evaporativo, bombas de calor y soluciones definitivas antivaho.
+- [Inversión en Pistas de Pádel: ROI y Plazos de Amortización](https://padelgree.com/blog/inversion-pistas-padel-retorno-roi-payback/): Comparativa frente a activos residenciales, plazos de payback (22 a 32 meses) y TIR del 28%.
+- [Comparativa de Software para Clubes: Playtomic, Matchi y Syltek](https://padelgree.com/blog/software-gestion-clubes-padel-comparativa/): Marketplace abierto vs software ERP, comisiones por reserva y domótica para clubes autónomos.
+- [El Mapa de Expansión de las Cadenas de Pádel en Europa](https://padelgree.com/blog/expansion-cadenas-padel-espana-europa/): Qué buscan los fondos de Private Equity, criterios de adquisición y comparativa M&A vs Greenfield.
 - [Requisitos Técnicos de Naves Industriales para Pádel](https://padelgree.com/blog/requisitos-tecnicos-naves-industriales-padel/): Alturas bajo viga (>8,5m–11m), retícula de pilares 11x21m, soleras 1.500 kg/m² y normativas urbanísticas.
 - [Unit Economics e Inversión en un Club de Pádel de 8 Pistas](https://padelgree.com/blog/unit-economics-inversion-club-padel-8-pistas/): Desglose financiero completo: Capex (500k€–750k€), Opex, margen EBITDA del 35% y TIR del 28%.
 - [Due Diligence para Comprar un Club de Pádel: Checklist Completo](https://padelgree.com/blog/due-diligence-compra-club-padel-checklist/): Auditoría técnica, legal y financiera: conciliación de software de reservas, licencias y estado del hardware.
