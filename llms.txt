@@ -10,12 +10,18 @@
 
 ---
 
-## Technical Articles & Blog Hub
+## Technical Guides & Specialized Padel Research (Blog Hub)
 - [Blog Hub Padelgree](https://padelgree.com/blog/): Portal de análisis técnico, valoraciones y guías de inversión en pádel.
-- [Guía de Valoración y Múltiplos EBITDA en Clubes de Pádel](https://padelgree.com/blog/valoracion-clubes-padel-multiplos-ebitda/): Análisis de múltiplos de 3,5x a 5,5x EBITDA, amortización de activos tangibles y contratos de alquiler.
-- [Requisitos Técnicos de Naves Industriales para Pádel](https://padelgree.com/blog/requisitos-tecnicos-naves-industriales-padel/): Alturas bajo viga (>8,5m–11m), retícula de pilares 11x21m, soleras 1.500 kg/m² y licencias municipales.
-- [Por Qué Vender un Club de Pádel en Off-Market](https://padelgree.com/blog/por-que-vender-club-padel-off-market-confidencial/): Destrucción de valor en portales públicos, fuga de socios y protocolo de ficha ciega con NDA.
+- [Guía de Valoración y Múltiplos EBITDA en Clubes de Pádel](https://padelgree.com/blog/valoracion-clubes-padel-multiplos-ebitda/): Múltiplos de 3,5x a 5,5x EBITDA, amortización de activos tangibles y contratos de alquiler.
+- [¿Cuánto Cuesta Montar un Club de Pádel Indoor? Presupuesto Real](https://padelgree.com/blog/cuanto-cuesta-montar-un-club-de-padel-indoor/): Presupuesto partida por partida (solera, pistas panorámicas, vestuarios, climatización y licencias).
+- [¿Cuánto Dinero Gana un Club de Pádel? Facturación Real y Márgenes](https://padelgree.com/blog/cuanto-gana-un-club-de-padel-facturacion-rentabilidad/): Facturación por pista (55k€–85k€/año), escuela, torneos, cafetería, Opex y EBITDA del 36%.
+- [Traspaso de Club de Pádel: Guía Legal, Contratos y Precio](https://padelgree.com/blog/traspaso-club-padel-guia-legal-contratos-precio/): Asset Deal vs Share Deal, cesión de alquiler bajo art. 32 LAU, cambio de licencia y subrogación laboral.
+- [El Contrato de Alquiler de Nave para Pádel: Cláusulas y Carencia](https://padelgree.com/blog/contrato-alquiler-nave-industrial-club-padel/): Negociación de 4-8 meses de carencia, resolución por denegación de licencia y duración a 10-15 años.
+- [Requisitos Técnicos de Naves Industriales para Pádel](https://padelgree.com/blog/requisitos-tecnicos-naves-industriales-padel/): Alturas bajo viga (>8,5m–11m), retícula de pilares 11x21m, soleras 1.500 kg/m² y normativas urbanísticas.
 - [Unit Economics e Inversión en un Club de Pádel de 8 Pistas](https://padelgree.com/blog/unit-economics-inversion-club-padel-8-pistas/): Desglose financiero completo: Capex (500k€–750k€), Opex, margen EBITDA del 35% y TIR del 28%.
+- [Due Diligence para Comprar un Club de Pádel: Checklist Completo](https://padelgree.com/blog/due-diligence-compra-club-padel-checklist/): Auditoría técnica, legal y financiera: conciliación de software de reservas, licencias y estado del hardware.
+- [¿Franquicia de Pádel o Club Independiente? Rentabilidad y Cánones](https://padelgree.com/blog/franquicia-padel-vs-club-independiente/): Comparativa de cánones, royalties mensuales (5%-7%), libertad de gestión y valor de salida M&A.
+- [Por Qué Vender un Club de Pádel en Off-Market](https://padelgree.com/blog/por-que-vender-club-padel-off-market-confidencial/): Destrucción de valor en portales públicos, fuga de socios y protocolo de ficha ciega con NDA.
 
 ---
 
