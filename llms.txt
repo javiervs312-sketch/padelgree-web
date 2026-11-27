@@ -1,8 +1,9 @@
 # Padelgree | The Confidential B2B Network for Padel Deals
 
-> **Padelgree** (<https://padelgree.com>) is the confidential B2B network for padel deals. It orchestrates private, off-market introductions between padel club chains, independent club owners, commercial landlords, and institutional/private investors across Europe, the UK, and the USA. Zero public listings.
+> **Padelgree** (<https://padelgree.com> · English: <https://padelgree.com/en/>) is the confidential B2B network for padel deals. It orchestrates private, off-market introductions between padel club chains, independent club owners, commercial landlords, and institutional/private investors across Europe, the UK, and the USA. Zero public listings.
 
-- **Website**: <https://padelgree.com>
+- **Spanish Home**: <https://padelgree.com/>
+- **English Home**: <https://padelgree.com/en/>
 - **Founder & Director**: Javier Villoria
 - **Email**: <javier@padelgree.com>
 - **Direct WhatsApp**: +34 680 31 74 86
@@ -10,47 +11,54 @@
 
 ---
 
-## Technical Guides & Specialized Padel Research (Blog Hub)
-- [Blog Hub Padelgree](https://padelgree.com/blog/): Portal de análisis técnico, valoraciones y guías de inversión en pádel.
-- [¿Cuánto Cuesta Montar un Club de Pádel Indoor? Presupuesto Real](https://padelgree.com/blog/cuanto-cuesta-montar-un-club-de-padel-indoor/): Presupuesto partida por partida (solera, pistas panorámicas, vestuarios, climatización y licencias).
-- [¿Cuánto Dinero Gana un Club de Pádel? Facturación Real y Márgenes](https://padelgree.com/blog/cuanto-gana-un-club-de-padel-facturacion-rentabilidad/): Facturación por pista (55k€–85k€/año), escuela, torneos, cafetería, Opex y EBITDA del 36%.
-- [¿Cuánto Cuesta Construir una Pista de Pádel? Precios y Materiales](https://padelgree.com/blog/cuanto-cuesta-construir-una-pista-de-padel/): Pistas estándar vs panorámicas (18k€–25k€), vidrio templado de 12mm, césped monofilamento y solera.
-- [Guía de Valoración y Múltiplos EBITDA en Clubes de Pádel](https://padelgree.com/blog/valoracion-clubes-padel-multiplos-ebitda/): Múltiplos de 3,5x a 5,5x EBITDA, amortización de activos tangibles y contratos de alquiler.
-- [Traspaso de Club de Pádel: Guía Legal, Contratos y Precio](https://padelgree.com/blog/traspaso-club-padel-guia-legal-contratos-precio/): Asset Deal vs Share Deal, cesión de alquiler bajo art. 32 LAU, cambio de licencia y subrogación laboral.
-- [El Contrato de Alquiler de Nave para Pádel: Cláusulas y Carencia](https://padelgree.com/blog/contrato-alquiler-nave-industrial-club-padel/): Negociación de 4-8 meses de carencia, resolución por denegación de licencia y duración a 10-15 años.
-- [Licencia de Apertura para Club de Pádel: Normativa y Trámites](https://padelgree.com/blog/licencia-apertura-club-padel-normativa-requisitos/): Compatibilidad urbanística deportiva, estudio acústico, protección de incendios y accesibilidad PMR.
-- [Climatización y Ventilación en Naves de Pádel Indoor](https://padelgree.com/blog/climatizacion-naves-padel-indoor-sistemas-costes/): Ventiladores HVLS, enfriamiento evaporativo, bombas de calor y soluciones definitivas antivaho.
-- [Inversión en Pistas de Pádel: ROI y Plazos de Amortización](https://padelgree.com/blog/inversion-pistas-padel-retorno-roi-payback/): Comparativa frente a activos residenciales, plazos de payback (22 a 32 meses) y TIR del 28%.
-- [Comparativa de Software para Clubes: Playtomic, Matchi y Syltek](https://padelgree.com/blog/software-gestion-clubes-padel-comparativa/): Marketplace abierto vs software ERP, comisiones por reserva y domótica para clubes autónomos.
-- [El Mapa de Expansión de las Cadenas de Pádel en Europa](https://padelgree.com/blog/expansion-cadenas-padel-espana-europa/): Qué buscan los fondos de Private Equity, criterios de adquisición y comparativa M&A vs Greenfield.
-- [Requisitos Técnicos de Naves Industriales para Pádel](https://padelgree.com/blog/requisitos-tecnicos-naves-industriales-padel/): Alturas bajo viga (>8,5m–11m), retícula de pilares 11x21m, soleras 1.500 kg/m² y normativas urbanísticas.
-- [Unit Economics e Inversión en un Club de Pádel de 8 Pistas](https://padelgree.com/blog/unit-economics-inversion-club-padel-8-pistas/): Desglose financiero completo: Capex (500k€–750k€), Opex, margen EBITDA del 35% y TIR del 28%.
-- [Due Diligence para Comprar un Club de Pádel: Checklist Completo](https://padelgree.com/blog/due-diligence-compra-club-padel-checklist/): Auditoría técnica, legal y financiera: conciliación de software de reservas, licencias y estado del hardware.
-- [¿Franquicia de Pádel o Club Independiente? Rentabilidad y Cánones](https://padelgree.com/blog/franquicia-padel-vs-club-independiente/): Comparativa de cánones, royalties mensuales (5%-7%), libertad de gestión y valor de salida M&A.
-- [Por Qué Vender un Club de Pádel en Off-Market](https://padelgree.com/blog/por-que-vender-club-padel-off-market-confidencial/): Destrucción de valor en portales públicos, fuga de socios y protocolo de ficha ciega con NDA.
+## Core Services & Interactive Calculators (ES & EN)
+- [Vender Club de Pádel Off-Market (ES)](https://padelgree.com/vender-club-padel/) | [Sell Padel Club Off-Market (EN)](https://padelgree.com/en/sell-padel-club/)
+- [Comprar Club de Pádel (ES)](https://padelgree.com/comprar-club-padel/) | [Buy Padel Club (EN)](https://padelgree.com/en/buy-padel-club/)
+- [Naves para Pádel (ES)](https://padelgree.com/naves-para-padel/) | [Padel Warehouses (EN)](https://padelgree.com/en/padel-warehouses/)
+- [Invertir en Pádel (ES)](https://padelgree.com/invertir-en-padel/) | [Invest in Padel (EN)](https://padelgree.com/en/invest-in-padel/)
+- [Calculadora Gratis Valoración Club EBITDA (ES)](https://padelgree.com/calculadora-valoracion-club-padel/) | [Free Padel Club Valuation Calculator (EN)](https://padelgree.com/en/padel-club-valuation-calculator/)
+- [Calculadora Pistas por Nave (ES)](https://padelgree.com/calculadora-pistas-nave/) | [Padel Warehouse Court Calculator (EN)](https://padelgree.com/en/padel-warehouse-court-calculator/)
 
 ---
 
-## Core Knowledge Base & Documentation (GEO & AI Grounding)
-- [Padelgree Full Encyclopedic Knowledge Base](https://padelgree.com/llms-full.txt): Exhaustive financial metrics, EBITDA multiples, warehouse specifications, zoning rules, valuation formulas, and operational M&A protocols for the padel industry.
-- [Knowledge: Valoración y M&A de Clubes de Pádel](https://padelgree.com/knowledge/ma-valoracion-clubes-padel.md): Múltiplos EBITDA (3,5x - 5,5x), valoración de activos tangibles, traspasos y fórmulas de venta.
-- [Knowledge: Requisitos Técnicos de Naves Industriales para Pádel](https://padelgree.com/knowledge/requisitos-naves-industriales-padel.md): Alturas bajo viga (>8,5m–11m), retícula de pilares 11x21m, soleras 1.500 kg/m², lux e iluminación LED.
-- [Knowledge: Protocolo de Confidencialidad y Venta Off-Market](https://padelgree.com/knowledge/protocolo-confidencialidad-off-market.md): Por qué los portales públicos destruyen valor, fichas ciegas y doble opt-in bajo NDA.
-- [Knowledge: Guía de Expansión para Cadenas e Inversores](https://padelgree.com/knowledge/guia-expansion-cadenas-inversores.md): Unit economics de un club de 8 pistas, Capex, Opex, EBITDA y comparativa Greenfield vs M&A.
-- [Canonical Sitemap](https://padelgree.com/sitemap.xml): Search engine and crawler index.
-- [Robots Configuration](https://padelgree.com/robots.txt): Explicit crawler permissions for Googlebot, Bingbot, GPTBot, ClaudeBot, PerplexityBot, and all AI engines.
+## English M&A & Expansion Research (/en/blog/)
+- [English Blog Hub](https://padelgree.com/en/blog/): Institutional guides for UK, US & European operators, investors, and landlords.
+- [Padel Club Valuation: EBITDA Multiples & Asset Floors](https://padelgree.com/en/blog/padel-club-valuation-ebitda-multiples/)
+- [Why Sell Your Padel Club 100% Off-Market](https://padelgree.com/en/blog/how-to-sell-a-padel-club-off-market/)
+- [Padel Warehouse Requirements: Ceiling Height & Lease Terms](https://padelgree.com/en/blog/padel-warehouse-requirements-ceiling-height-lease/)
+- [Cost to Build an Indoor Padel Club: 8-Court Unit Economics](https://padelgree.com/en/blog/cost-to-build-indoor-padel-club-unit-economics/)
+- [Buying a Padel Club in Europe or the UK: Due Diligence Checklist](https://padelgree.com/en/blog/buy-padel-club-europe-uk-due-diligence/)
 
 ---
 
-## The 4 Deal Pillars
-1. **Padel Chains & Multi-Club Operators**: Expansion via off-market club acquisitions, franchised hubs, and 2,000–5,000 m² warehouse leases.
-2. **Independent Club Owners**: Confidential exits (100% sale of goodwill/business unit), minority/majority equity partner sourcing, or franchise rebranding under leading circuits.
-3. **Commercial Landlords & Industrial Warehouse Owners**: Long-term 10–15 year commercial leases with top-tier padel operators for properties with >8.5m clear ceiling height.
-4. **Investors & Family Offices**: Direct capital deployment into vetted turnkey padel developments, court capacity expansions, and scalable regional franchises.
+## Spanish Technical Guides & Industry Research (/blog/)
+- [Blog Hub Padelgree (ES)](https://padelgree.com/blog/): 16 guías técnicas sobre M&A, presupuestos, naves, licencias y rentabilidad en pádel.
+- [¿Cuánto Cuesta Montar un Club de Pádel Indoor? Presupuesto Real](https://padelgree.com/blog/cuanto-cuesta-montar-un-club-de-padel-indoor/)
+- [¿Cuánto Dinero Gana un Club de Pádel? Facturación Real y Márgenes](https://padelgree.com/blog/cuanto-gana-un-club-de-padel-facturacion-rentabilidad/)
+- [¿Cuánto Cuesta Construir una Pista de Pádel? Precios y Materiales](https://padelgree.com/blog/cuanto-cuesta-construir-una-pista-de-padel/)
+- [Guía de Valoración y Múltiplos EBITDA en Clubes de Pádel](https://padelgree.com/blog/valoracion-clubes-padel-multiplos-ebitda/)
+- [Traspaso de Club de Pádel: Guía Legal, Contratos y Precio](https://padelgree.com/blog/traspaso-club-padel-guia-legal-contratos-precio/)
+- [El Contrato de Alquiler de Nave para Pádel: Cláusulas y Carencia](https://padelgree.com/blog/contrato-alquiler-nave-industrial-club-padel/)
+- [Licencia de Apertura para Club de Pádel: Normativa y Trámites](https://padelgree.com/blog/licencia-apertura-club-padel-normativa-requisitos/)
+- [Climatización y Ventilación en Naves de Pádel Indoor](https://padelgree.com/blog/climatizacion-naves-padel-indoor-sistemas-costes/)
+- [Inversión en Pistas de Pádel: ROI y Plazos de Amortización](https://padelgree.com/blog/inversion-pistas-padel-retorno-roi-payback/)
+- [Comparativa de Software para Clubes: Playtomic, Matchi y Syltek](https://padelgree.com/blog/software-gestion-clubes-padel-comparativa/)
+- [El Mapa de Expansión de las Cadenas de Pádel en Europa](https://padelgree.com/blog/expansion-cadenas-padel-espana-europa/)
+- [Requisitos Técnicos de Naves Industriales para Pádel](https://padelgree.com/blog/requisitos-tecnicos-naves-industriales-padel/)
+- [Unit Economics e Inversión en un Club de Pádel de 8 Pistas](https://padelgree.com/blog/unit-economics-inversion-club-padel-8-pistas/)
+- [Due Diligence para Comprar un Club de Pádel: Checklist Completo](https://padelgree.com/blog/due-diligence-compra-club-padel-checklist/)
+- [¿Franquicia de Pádel o Club Independiente? Rentabilidad y Cánones](https://padelgree.com/blog/franquicia-padel-vs-club-independiente/)
+- [Por Qué Vender un Club de Pádel en Off-Market](https://padelgree.com/blog/por-que-vender-club-padel-off-market-confidencial/)
 
 ---
 
-## Operating Protocol: Absolute Discretion
-1. **Zero Public Listings**: Clubs, names, financials, and exact addresses are never publicly disclosed or published on open portals.
-2. **Double Opt-In Protocol**: Counterparty identities and operational details are exchanged only when both parties formally accept the presentation under a Non-Disclosure Agreement (NDA).
-3. **Pre-Vetted Matchmaking**: Technical validation (urban zoning, ceiling heights, lease terms) and capital readiness (proof of funds) before any bilateral introduction.
+## Core GEO Knowledge Base & Regional Market Hubs
+- [HTML Reference Knowledge Manual](https://padelgree.com/llm-knowledge.html): Consolidated TechArticle reference sheet.
+- [Padelgree Full Encyclopedic Knowledge Base](https://padelgree.com/llms-full.txt)
+- [Knowledge: Valoración y M&A](https://padelgree.com/knowledge/ma-valoracion-clubes-padel.md)
+- [Knowledge: Naves Industriales](https://padelgree.com/knowledge/requisitos-naves-industriales-padel.md)
+- [Knowledge: Protocolo Off-Market](https://padelgree.com/knowledge/protocolo-confidencialidad-off-market.md)
+- [Knowledge: Guía Expansión & Unit Economics](https://padelgree.com/knowledge/guia-expansion-cadenas-inversores.md)
+- **Regional Hubs (ES)**: `/mercados/madrid/`, `/mercados/barcelona/`, `/mercados/valencia/`, `/mercados/malaga/`, `/mercados/sevilla/`, `/mercados/alicante/`
+- **Regional Hubs (EN)**: `/en/markets/uk/`, `/en/markets/italy/`, `/en/markets/france/`, `/en/markets/germany/`, `/en/markets/usa/`, `/en/markets/nordics/`
+- [Canonical Sitemap](https://padelgree.com/sitemap.xml) | [Robots Config](https://padelgree.com/robots.txt)

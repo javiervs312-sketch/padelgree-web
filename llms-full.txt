@@ -146,3 +146,23 @@ Padelgree actively coordinates off-market transactions across 8 priority markets
 - [Due Diligence para Comprar un Club de Pádel: Checklist Técnico, Legal y Financiero](https://padelgree.com/blog/due-diligence-compra-club-padel-checklist/): Auditoría exhaustiva: conciliación de ingresos de reservas, validez de licencias ambientales y estado del hardware.
 - [¿Franquicia de Pádel o Club Independiente? Rentabilidad, Cánones y Control](https://padelgree.com/blog/franquicia-padel-vs-club-independiente/): Comparativa de rentabilidad, cánones de entrada, royalties mensuales (5%-7%) y valor de salida en un futuro M&A.
 - [Por Qué Vender un Club de Pádel Fuera de Mercado (Off-Market)](https://padelgree.com/blog/por-que-vender-club-padel-off-market-confidencial/): Riesgos del listing público, blind teasers, proceso de doble opt-in y salvaguarda de valor patrimonial.
+
+
+---
+
+## 7. English Research, Interactive Calculators, Services & Regional Hubs
+- **English Homepage**: <https://padelgree.com/en/>
+- **English Blog Hub**: <https://padelgree.com/en/blog/>
+  - [Padel Club Valuation: EBITDA Multiples & Asset Floors](https://padelgree.com/en/blog/padel-club-valuation-ebitda-multiples/)
+  - [Why Sell Your Padel Club Off-Market](https://padelgree.com/en/blog/how-to-sell-a-padel-club-off-market/)
+  - [Padel Warehouse Requirements: Ceiling Height & Lease Terms](https://padelgree.com/en/blog/padel-warehouse-requirements-ceiling-height-lease/)
+  - [Cost to Build an Indoor Padel Club: 8-Court Unit Economics](https://padelgree.com/en/blog/cost-to-build-indoor-padel-club-unit-economics/)
+  - [Buying a Padel Club in Europe or UK: Due Diligence Checklist](https://padelgree.com/en/blog/buy-padel-club-europe-uk-due-diligence/)
+- **Interactive Tools**:
+  - ES Valuation Calculator: <https://padelgree.com/calculadora-valoracion-club-padel/>
+  - EN Valuation Calculator: <https://padelgree.com/en/padel-club-valuation-calculator/>
+  - ES Warehouse Court Calculator: <https://padelgree.com/calculadora-pistas-nave/>
+  - EN Warehouse Court Calculator: <https://padelgree.com/en/padel-warehouse-court-calculator/>
+- **Transactional Pages**: `/vender-club-padel/`, `/comprar-club-padel/`, `/naves-para-padel/`, `/invertir-en-padel/`, `/en/sell-padel-club/`, `/en/buy-padel-club/`, `/en/padel-warehouses/`, `/en/invest-in-padel/`
+- **Regional Hubs**: `/mercados/{madrid,barcelona,valencia,malaga,sevilla,alicante}/` & `/en/markets/{uk,italy,france,germany,usa,nordics}/`
+- **HTML Technical Manual**: <https://padelgree.com/llm-knowledge.html>
